@@ -10,6 +10,7 @@ I spend one night to learn how to use [Jekyll](http://jekylrb.com) (recomended b
 
 ## What's the point?
 The point is, learn to can teach. Teaching I will learn more, learning more, I can teach more.
+
 I win, who reads win, evebody wins, evebody be happy :).
  
 ## This repo is at what stage?
