@@ -1,20 +1,23 @@
-# my-personal-blog
+# My personal blog
+
 This repository is basically the repository of [my own personal blog](http://ricardovsilva.herokkuapp.com).
-I spend one night to learn how to use [Jekyll](http://jekylrb.com) (recomended by [Jhonny Moreira](https://github.com/jhonnymoreira)). And, more and more I'm loving Ruby.
+I spent one night to learn how to use [Jekyll](http://jekylrb.com) (recommended by [Jhonny Moreira](https://github.com/jhonnymoreira)). And, more and more I'm loving Ruby.
 
 ## What am I using?
-- Programming Language: Basically Ruby to backend and some html, css and js to frontend
-- Programming IDE: Cloud9, just fantastic, I can program and deploy from anywhere
-- Source Control: As anyone can see, Github
-- Host: Heroku, I really know little about heroku, but it already won my love
+
+- **Programming Language:** Basically Ruby to backend and some HTML, CSS and JS to frontend
+- **Programming IDE:** [Cloud9](https://c9.io/), just fantastic, I'm able to develop and deploy from anywhere
+- **Source Control:** As anyone can see, [GitHub](https://www.github.com/)
+- **Host:** [Heroku](https://www.heroku.com/), I know just a little about it, but already earned my love.
 
 ## What's the point?
-The point is, learn to can teach. Teaching I will learn more, learning more, I can teach more.
 
-I win, who reads win, evebody wins, evebody be happy :).
- 
-## This repo is at what stage?
-The blog is completely functional, very ugly yet, but functional. 
-If you never worked or heard about [Jekyll](http://jekylrb.com), I really recomend take a look at [docs](jekyllrb.com/docs)
-Feel free to fork and use that as your start point.
-If you have any doubt, suggestion or affliction, let me know (maybe open a issue is a good idea)
+The point is: Learn to be able to teach. When teaching, I'll learn more. Learning more, I'll teach more. I win, who reads wins. Everybody wins, everybody happy. :)
+
+## What's the repo status?
+
+The blog is completely function, ugly yet, but functional. If you enver work or heard about [Jekyll](http://jekylrb.com), I recommend you to take a look at the [docs](jekyllrb.com/docs).
+
+Feel free to fork and use this repo as your start point, if you want to.
+
+Any doubt, suggestion or affliction? Let me know by opening a issue.
