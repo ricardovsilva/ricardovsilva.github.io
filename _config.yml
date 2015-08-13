@@ -1,15 +1,23 @@
+name: "Mr Truth Development"
 description: "Mr Truth - Tentando descomplicar o desenvolvimento de software"
 
 url: "[YOUR DOMAIN]"
 
-paginate: 10
+paginate: 5
 
 permalink: pretty
 
 defaults:
-  
-    scope:
-        path: ""
-        timezone:  America/Sao_Paulo
-        layout: _main                
-        name: ""
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "post"
+    -
+        scope:
+            path: ""
+        values:
+            timezone:  America/Sao_Paulo
+            layout: "default"
+    
