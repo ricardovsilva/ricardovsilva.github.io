@@ -21,3 +21,5 @@ defaults:
             timezone:  America/Sao_Paulo
             layout: "default"
     
+    
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
