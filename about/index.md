@@ -44,6 +44,7 @@ Começo aprendendo no momento em que eu criei este blog. Falando alguns aspectos
 - Utilizei o [Jekyll](http://jekyllrb.com)
 - Vou praticar a minha escrita :)
 - Pesquisarei mais e mais assuntos para trazer para cá
+- Adicionarei a possibilidade de escrever comentários (relaxa, você ainda vai poder usar sua conta do facebook aqui)
 
 ## Mas esse blog está tosco, o que você vai fazer em seguida?
 - Vou melhorar o visual dele (da-lhe aprender Sass e noções de design, estou aprendendo :))
