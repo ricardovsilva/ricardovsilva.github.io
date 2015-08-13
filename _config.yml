@@ -1,0 +1,15 @@
+description: "Mr Truth - Tentando descomplicar o desenvolvimento de software"
+
+url: "[YOUR DOMAIN]"
+
+paginate: 10
+
+permalink: pretty
+
+defaults:
+  
+    scope:
+        path: ""
+        timezone:  America/Sao_Paulo
+        layout: _main                
+        name: ""
