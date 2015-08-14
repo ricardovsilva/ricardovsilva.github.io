@@ -11,7 +11,9 @@ layout: default
       <a href="{{ post.url }}">Leia mais...</a><br><br>
       <div class="tags">
           {% for tag in post.tags %}
+          <post-tag>
               <a href="/tags/#{{tag}}">{{ tag }}</a>
+          </post-tag>
           {% endfor %}
       </div>
     </div>
