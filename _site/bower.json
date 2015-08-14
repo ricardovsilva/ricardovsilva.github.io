@@ -1,0 +1,19 @@
+{
+  "name": "my-personal-blog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ricardovsilva/ricardovsilva.github.io",
+  "authors": [
+    "ricardovsilva <ricardovsilva@msn.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}

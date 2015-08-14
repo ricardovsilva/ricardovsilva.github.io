@@ -2,6 +2,10 @@
 title: A Importância dos Requisitos
 author: Ricardo da Verdade Silva
 layout: post
+tags: 
+ - análise de requisitos
+ - engenharia de software
+ - tradução
 ---
 
 Este post é uma tradução livre que eu fiz do livro Code

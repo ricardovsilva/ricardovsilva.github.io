@@ -1,0 +1,31 @@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/polymer/0.5.6/polymer.min.js"></script>
+    
+<link rel="import"
+      href="bower_components/polymer/polymer.html">
+
+<dom-module id="picture-frame">
+
+  <!-- scoped CSS for this element -->
+  <style>
+    div {
+      display: inline-block;
+      background-color: #ccc;
+      border-radius: 8px;
+      padding: 4px;
+    }
+  </style>
+
+  <template>
+    <div>
+      <!-- any children are rendered here -->
+      <content></content>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: "picture-frame",
+    });
+  </script>
+
+</dom-module>
