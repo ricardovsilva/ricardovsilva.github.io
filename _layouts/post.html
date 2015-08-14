@@ -5,6 +5,8 @@
     <p class="muted">{{ page.date | date_to_long_string }} by {{ page.author }}</p>
     
     {{ content }}
+    
+    {% include comments.html %}
   </div>
   <div class="col col-xs-4">
     {% include sidebar.html %}
