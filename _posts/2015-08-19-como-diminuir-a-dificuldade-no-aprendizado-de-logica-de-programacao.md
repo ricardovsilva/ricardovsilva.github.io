@@ -7,6 +7,7 @@ tags:
  - algoritmos
  - lógica de programação
  - nível júnior
+ - passos de bebê
 ---
 
 Tenho visto a dificuldade que muitos iniciantes no estudo de algoritmos e linguagens de programação tem.
