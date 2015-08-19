@@ -44,7 +44,7 @@ Além dos operadores básicos, existem outros operadores que são extremamente �
 
 Algumas linguagens possuem operadores matemáticos implementados. Por exemplo, em python podemos utilizar o símbolo ** para representar potência:
 
-{% highlight python lineos }
+{% highlight python lineos %}
 a = 2**2
 b = 2**3
 c = 10**2
@@ -52,7 +52,7 @@ c = 10**2
 print(str(a)) #4
 print(str(b)) #8
 print(str(c)) #100
-{%endhighlight}
+{%endhighlight %}
 
 Minha recomendação é: procure a documentação básica da línguagem que você quer aprender e verifique quais operadores aritméticos eles possuem. 
 A disponibilidade, ou não, de um determinado operador vai impactar diretamente a forma como você irá desenvolver o seu algoritmo.
