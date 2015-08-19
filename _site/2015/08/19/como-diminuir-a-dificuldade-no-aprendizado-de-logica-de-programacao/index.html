@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mr Truth Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mr Truth - Tentando descomplicar o desenvolvimento de software">
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/syntax.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    
+    <link rel="import" href="/components/post-tag.html">
+    
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Mr Truth Development</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="/about"/>Sobre Mim</a>
+        </li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="col col-xs-8">
+    <h1>Aprendendo Mais Facilmente a Programar</h1>
+    <p class="muted">19 August 2015 by Ricardo da Verdade Silva</p>
+    
+    <p>Tenho visto a dificuldade que muitos iniciantes no estudo de algoritmos e linguagens de programação tem.
+Estou na minha segunda faculdade, primeiro cursei Desenvolvimento de Jogos na FATEC Carapicuíba (e infelizmente não conclui, mas isso fica para outro post),
+e agora estou fazendo Análise e Desenvolvimento de Sistemas na FATEC São Paulo.
+No terceiro semestre do curso de análise de sistemas, eu constatei exatamente a mesma situação que presenciei no terceiro semestre do curso de desenvolvimento de jogos:
+após dois semestres tendo lógica e linguagens de programação, muita gente ainda tem muita dificuldade para desenvolver o raciocínio e escrever algoritmos simples.
+Quero deixar claro que eu não tenho nenhum estudo científico para referênciar e embasar a minha afirmação, ela se dá unicamente pela minha experiência pessoal.
+Então, a que se deve toda esta dificuldade? Programar é extremamente difícil? Os professores são muito ruins? Os alunos são muito ruins? Em minha opinião, a resposta para
+todas as perguntas é não. O que eleva a dificuldade no aprendizado e no desenvolvimento da lógica de programação, é justamente a falta de atenção que é dada aos elementos mais simples
+do desenvolvimento e que estão presentes em praticamente todas as linguagens de programação (eu desconheço alguma que não os tenha, se você conhecer, por favor, poste nos comentários).</p>
+
+<h2 id="elementos-bsicos">Elementos Básicos</h2>
+<p>Todo algoritmo que eu conheço, desenvolvido em qualquer linguagem de programação que eu conheço, são básicamente e fundamentalmente constituidos de:</p>
+
+<ul>
+  <li>
+    <p>Operadores Aritméticos</p>
+  </li>
+  <li>
+    <p>Operadores Lógicos</p>
+  </li>
+  <li>
+    <p>Controladores de Fluxo</p>
+  </li>
+  <li>
+    <p>Estruturas de Repetição</p>
+  </li>
+</ul>
+
+<h3 id="operadores-aritmticos">Operadores Aritméticos</h3>
+<p>É importante entender bem algum dos operadores lógicos disponiveis em toda linguagem de programação. Os operadores lógicos são parte fundamental no desenvolvimento de um algoritmo.
+Mesmo algoritmos extremamente simples, que tenham ao menos uma tomada de decisão, utilizarão operadores aritméticos</p>
+
+<h3 id="controladores-de-fluxo">Controladores de Fluxo</h3>
+<p>O que são os controladores de fluxo? Para que servem? Quem são eles?</p>
+
+<p>Como o próprio nome sugere, eles servem para controlar o fluxo de uma aplicação. </p>
+
+<p>É através deles que o seu programa terá a inteligência para tomar decisões. São os controladores de fluxo que permitirão ao seu programa
+fazer algo, ou não. Os controladores de fluxo são:</p>
+
+<ul>
+  <li>
+    <p>if - Sempre que uma determinada condição for verdadeira, ou não falsa (veremos isso nos exemplos), tudo que está especificado dentro do bloco do if será executado.</p>
+  </li>
+  <li>
+    <p>else - O else é a situação contrária ao if. Um if não precisa de um else para existir, mas o else precisa do if. O else não executa nenhuma verificação lógica, sempre que a condição do if
+    for falsa, o else (se existir) será executado.</p>
+  </li>
+</ul>
+
+<p>Vejamos o seguinte problema:</p>
+
+<blockquote>
+  <p><em>Um colégio precisa de um programa para verificar se os seus alunos foram aprovados em determinada disciplina. De acordo com as regras desse colégio:</em></p>
+
+  <ul>
+    <li>
+      <p><em>Cada aluno é avaliado semestralmente, ou seja, possui 2 notas.</em></p>
+    </li>
+    <li>
+      <p><em>A média do aluno é a média aritmética das notas. Ou seja, as duas notas somadas e o resultado dividido por dois.</em></p>
+    </li>
+    <li>
+      <p><em>Todas as notas são números inteiros (a fim de simplificar o nosso exemplo)</em></p>
+    </li>
+    <li>
+      <p><em><strong>SE</strong> o aluno tiver nota <strong>maior ou igual</strong> a 6, ele será aprovado, <strong>senão</strong> será reprovado.</em></p>
+    </li>
+  </ul>
+</blockquote>
+
+<p>Sempre, eu digo sempre, que você for tentar desenvolver um algoritmo, preste atenção ao problema a ser resolvido. Tente escrever um texto dos requisitos, do cenário, a partir dele já é possível extrair
+dados importantes ao funcionamento do nosso algoritmo.</p>
+
+<p>Como iremos resolver o problema acima? Recomendo que você, leitor, tente descrever o passo a passo deste algoritmo antes de continuar lendo o passo a passo abaixo:</p>
+
+<ol>
+  <li>
+    <p>Definiremos a <strong>quantidade de notas</strong> como sendo 2</p>
+  </li>
+  <li>
+    <p>Obteremos a <strong>soma</strong> entre a <strong>nota1</strong> e a <strong>nota2</strong></p>
+  </li>
+  <li>
+    <p>Obteremos a <strong>média</strong> através da divisão da <strong>soma</strong> pela <strong>quantidade de notas</strong></p>
+  </li>
+  <li>
+    <p><strong>Se</strong> a <strong>média</strong> for <strong>maior ou igual</strong> a 6, então o aluno foi aprovado</p>
+  </li>
+  <li>
+    <p><strong>Senão</strong>, o aluno foi reprovado</p>
+  </li>
+</ol>
+
+<p>Esta é a estrutura básica do nosso algoritmo. Como traduzimos isso para linguagens de programação?</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="c1">#ruby</span>
+<span class="lineno"> 2</span> <span class="k">def</span> <span class="nf">verificar_aluno_aprovado</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">)</span>
+<span class="lineno"> 3</span>    <span class="n">quantidade_de_notas</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="lineno"> 4</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span>
+<span class="lineno"> 5</span>    <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span><span class="o">/</span><span class="n">quantidade_de_notas</span>
+<span class="lineno"> 6</span>    <span class="k">if</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">6</span>
+<span class="lineno"> 7</span>       <span class="k">return</span> <span class="kp">true</span>
+<span class="lineno"> 8</span>    <span class="k">else</span>
+<span class="lineno"> 9</span>       <span class="k">return</span> <span class="kp">false</span>
+<span class="lineno">10</span>    <span class="k">end</span>
+<span class="lineno">11</span> <span class="k">end</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c">#python</span>
+<span class="lineno">2</span> <span class="k">def</span> <span class="nf">verificar_aluno_aprovado</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">)</span>
+<span class="lineno">3</span>    <span class="n">quantidade_de_notas</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="lineno">4</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span>
+<span class="lineno">5</span>    <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span><span class="o">/</span><span class="n">quantidade_de_notas</span>
+<span class="lineno">6</span>    <span class="k">if</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">6</span>
+<span class="lineno">7</span>       <span class="k">return</span> <span class="n">true</span>
+<span class="lineno">8</span>    <span class="k">else</span>
+<span class="lineno">9</span>       <span class="k">return</span> <span class="n">false</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="lineno"> 1</span> <span class="c1">//c#</span>
+<span class="lineno"> 2</span> <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">VerificarAlunoAprovado</span><span class="p">(</span><span class="kt">int</span> <span class="n">nota1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">nota2</span><span class="p">)</span>
+<span class="lineno"> 3</span> <span class="p">{</span>
+<span class="lineno"> 4</span>    <span class="kt">int</span> <span class="n">quantidadeDeNotas</span> <span class="p">=</span> <span class="m">2</span>
+<span class="lineno"> 5</span>    <span class="kt">int</span> <span class="n">soma</span> <span class="p">=</span> <span class="n">nota1</span> <span class="p">+</span> <span class="n">nota2</span><span class="p">;</span>
+<span class="lineno"> 6</span>    <span class="kt">int</span> <span class="n">media</span> <span class="p">=</span> <span class="n">soma</span><span class="p">/</span><span class="n">quantidadeDeNotas</span><span class="p">;</span>
+<span class="lineno"> 7</span>                                         
+<span class="lineno"> 8</span>    <span class="k">if</span><span class="p">(</span><span class="n">media</span> <span class="p">&gt;=</span> <span class="m">6</span><span class="p">)</span>
+<span class="lineno"> 9</span>    <span class="p">{</span>                                    
+<span class="lineno">10</span> 	  <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+<span class="lineno">11</span>    <span class="p">}</span>
+<span class="lineno">12</span>    <span class="k">else</span>
+<span class="lineno">13</span>    <span class="p">{</span>
+<span class="lineno">14</span>       <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+<span class="lineno">15</span>    <span class="p">}</span>
+<span class="lineno">16</span> <span class="p">}</span></code></pre></div>
+
+<p>Recomendo tentar </p>
+
+    
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'ricardovsilva';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+  <div class="col hidden-xs hidden-sm col-md-4">
+    <h3>Ultimos Posts</h3>
+
+<ul>
+  
+    <li><a href="/2015/08/19/como-diminuir-a-dificuldade-no-aprendizado-de-logica-de-programacao/">Aprendendo Mais Facilmente a Programar</a></li>
+  
+    <li><a href="/2015/08/14/a-importancia-dos-requisitos/">A Importância dos Requisitos</a></li>
+  
+</ul>
+  </div>
+</div>
+
+    
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
