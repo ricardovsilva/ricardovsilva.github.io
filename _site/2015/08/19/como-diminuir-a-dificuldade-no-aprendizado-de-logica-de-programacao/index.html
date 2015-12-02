@@ -98,13 +98,13 @@ em que colocamos os pés na escola.</p>
 
 <p>Algumas linguagens possuem operadores matemáticos implementados. Por exemplo, em python podemos utilizar o símbolo ** para representar potência:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">2</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">2</span>
 
 <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="c">#4</span>
 <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">))</span> <span class="c">#8</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="c">#100</span></code></pre></div>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="c">#100</span></code></pre></figure>
 
 <p>Minha recomendação é: procure a documentação básica da línguagem que você quer aprender e verifique quais operadores aritméticos eles possuem. 
 A disponibilidade, ou não, de um determinado operador vai impactar diretamente a forma como você irá desenvolver o seu algoritmo.</p>
@@ -112,7 +112,7 @@ A disponibilidade, ou não, de um determinado operador vai impactar diretamente 
 <h3 id="controladores-de-fluxo">Controladores de Fluxo</h3>
 <p>O que são os controladores de fluxo? Para que servem? Quem são eles?</p>
 
-<p>Como o próprio nome sugere, eles servem para controlar o fluxo de uma aplicação. </p>
+<p>Como o próprio nome sugere, eles servem para controlar o fluxo de uma aplicação.</p>
 
 <p>É através deles que o seu programa terá a inteligência para tomar decisões. São os controladores de fluxo que permitirão ao seu programa
 fazer algo, ou não. Os controladores de fluxo são:</p>
@@ -173,44 +173,80 @@ dados importantes ao funcionamento do nosso algoritmo.</p>
 
 <p>Esta é a estrutura básica do nosso algoritmo. Como traduzimos isso para linguagens de programação?</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="c1">#ruby</span>
-<span class="lineno"> 2</span> <span class="k">def</span> <span class="nf">verificar_aluno_aprovado</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">)</span>
-<span class="lineno"> 3</span>    <span class="n">quantidade_de_notas</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="lineno"> 4</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span>
-<span class="lineno"> 5</span>    <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span><span class="o">/</span><span class="n">quantidade_de_notas</span>
-<span class="lineno"> 6</span>    <span class="k">if</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">6</span>
-<span class="lineno"> 7</span>       <span class="k">return</span> <span class="kp">true</span>
-<span class="lineno"> 8</span>    <span class="k">else</span>
-<span class="lineno"> 9</span>       <span class="k">return</span> <span class="kp">false</span>
-<span class="lineno">10</span>    <span class="k">end</span>
-<span class="lineno">11</span> <span class="k">end</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="code"><pre><span class="c1">#ruby</span>
+<span class="k">def</span> <span class="nf">verificar_aluno_aprovado</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">)</span>
+   <span class="n">quantidade_de_notas</span> <span class="o">=</span> <span class="mi">2</span>
+   <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span>
+   <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span><span class="o">/</span><span class="n">quantidade_de_notas</span>
+   <span class="k">if</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">6</span>
+      <span class="k">return</span> <span class="kp">true</span>
+   <span class="k">else</span>
+      <span class="k">return</span> <span class="kp">false</span>
+   <span class="k">end</span>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c">#python</span>
-<span class="lineno">2</span> <span class="k">def</span> <span class="nf">verificar_aluno_aprovado</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">)</span>
-<span class="lineno">3</span>    <span class="n">quantidade_de_notas</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="lineno">4</span>    <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span>
-<span class="lineno">5</span>    <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span><span class="o">/</span><span class="n">quantidade_de_notas</span>
-<span class="lineno">6</span>    <span class="k">if</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">6</span>
-<span class="lineno">7</span>       <span class="k">return</span> <span class="n">true</span>
-<span class="lineno">8</span>    <span class="k">else</span>
-<span class="lineno">9</span>       <span class="k">return</span> <span class="n">false</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre><span class="c">#python</span>
+<span class="k">def</span> <span class="nf">verificar_aluno_aprovado</span><span class="p">(</span><span class="n">nota1</span><span class="p">,</span> <span class="n">nota2</span><span class="p">)</span>
+   <span class="n">quantidade_de_notas</span> <span class="o">=</span> <span class="mi">2</span>
+   <span class="n">soma</span> <span class="o">=</span> <span class="n">nota1</span> <span class="o">+</span> <span class="n">nota2</span>
+   <span class="n">media</span> <span class="o">=</span> <span class="n">soma</span><span class="o">/</span><span class="n">quantidade_de_notas</span>
+   <span class="k">if</span> <span class="n">media</span> <span class="o">&gt;=</span> <span class="mi">6</span>
+      <span class="k">return</span> <span class="n">true</span>
+   <span class="k">else</span>
+      <span class="k">return</span> <span class="n">false</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
-<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="lineno"> 1</span> <span class="c1">//c#</span>
-<span class="lineno"> 2</span> <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">VerificarAlunoAprovado</span><span class="p">(</span><span class="kt">int</span> <span class="n">nota1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">nota2</span><span class="p">)</span>
-<span class="lineno"> 3</span> <span class="p">{</span>
-<span class="lineno"> 4</span>    <span class="kt">int</span> <span class="n">quantidadeDeNotas</span> <span class="p">=</span> <span class="m">2</span>
-<span class="lineno"> 5</span>    <span class="kt">int</span> <span class="n">soma</span> <span class="p">=</span> <span class="n">nota1</span> <span class="p">+</span> <span class="n">nota2</span><span class="p">;</span>
-<span class="lineno"> 6</span>    <span class="kt">int</span> <span class="n">media</span> <span class="p">=</span> <span class="n">soma</span><span class="p">/</span><span class="n">quantidadeDeNotas</span><span class="p">;</span>
-<span class="lineno"> 7</span>                                         
-<span class="lineno"> 8</span>    <span class="k">if</span><span class="p">(</span><span class="n">media</span> <span class="p">&gt;=</span> <span class="m">6</span><span class="p">)</span>
-<span class="lineno"> 9</span>    <span class="p">{</span>                                    
-<span class="lineno">10</span> 	  <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-<span class="lineno">11</span>    <span class="p">}</span>
-<span class="lineno">12</span>    <span class="k">else</span>
-<span class="lineno">13</span>    <span class="p">{</span>
-<span class="lineno">14</span>       <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
-<span class="lineno">15</span>    <span class="p">}</span>
-<span class="lineno">16</span> <span class="p">}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td><td class="code"><pre><span class="c1">//c#
+</span><span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">VerificarAlunoAprovado</span><span class="p">(</span><span class="kt">int</span> <span class="n">nota1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">nota2</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="kt">int</span> <span class="n">quantidadeDeNotas</span> <span class="p">=</span> <span class="m">2</span>
+   <span class="kt">int</span> <span class="n">soma</span> <span class="p">=</span> <span class="n">nota1</span> <span class="p">+</span> <span class="n">nota2</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">media</span> <span class="p">=</span> <span class="n">soma</span><span class="p">/</span><span class="n">quantidadeDeNotas</span><span class="p">;</span>
+                                        
+   <span class="k">if</span><span class="p">(</span><span class="n">media</span> <span class="p">&gt;=</span> <span class="m">6</span><span class="p">)</span>
+   <span class="p">{</span>                                    
+	  <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+   <span class="p">}</span>
+   <span class="k">else</span>
+   <span class="p">{</span>
+      <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Continua na parte 2…</p>
 
@@ -232,6 +268,8 @@ dados importantes ao funcionamento do nosso algoritmo.</p>
     <h3>Ultimos Posts</h3>
 
 <ul>
+  
+    <li><a href="/2015/09/30/apenas-um-exemplo-de-post/">Aprendendo Mais Facilmente a Programar</a></li>
   
     <li><a href="/2015/08/19/como-diminuir-a-dificuldade-no-aprendizado-de-logica-de-programacao/">Aprendendo Mais Facilmente a Programar</a></li>
   
