@@ -16,4 +16,4 @@ markdown: kramdown
 paginate: 4
 author: Ricardo da Verdade Silva
 gems: [jekyll-paginate]
-lang: pt-br
+lang: pt-BR
