@@ -8,6 +8,10 @@ tags:
  - lógica de programação
  - nível júnior
  - passos de bebê
+resume:
+  Muitos desenvolvedores que estão iniciando suas carreiras tem dificuldades básicas no que diz respeito
+  ao processo de aprendizado.
+  Veja, ou revise, os pontos mais básicos e mais importantes no aprendizado de qualquer linguagem de programação.
 ---
 
 Tenho visto a dificuldade que muitos iniciantes no estudo de algoritmos e linguagens de programação tem.
