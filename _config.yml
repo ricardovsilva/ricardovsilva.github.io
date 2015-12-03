@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   opensource já me deu.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ricardovsilva.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+twitter_username: MrTruthDev
 github_username:  ricardovsilva
 
 # Build settings
