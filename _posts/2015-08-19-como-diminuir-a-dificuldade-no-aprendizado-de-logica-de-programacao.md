@@ -8,6 +8,7 @@ tags:
  - lógica de programação
  - nível júnior
  - passos de bebê
+comments: true
 resume:
   Muitos desenvolvedores que estão iniciando suas carreiras tem dificuldades básicas no que diz respeito
   ao processo de aprendizado.

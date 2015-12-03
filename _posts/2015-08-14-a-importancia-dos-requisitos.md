@@ -6,6 +6,7 @@ tags:
  - análise de requisitos
  - engenharia de software
  - tradução
+comments: true
 resume: 
  Muitas vezes, durante o ciclo de desenvolvimento de um software, os requisitos
  são deixados de lado. Muitos de nós nem sabemos a real importância, e impacto

@@ -50,6 +50,13 @@
                 </ul>
               </footer>
            </article>
+           
+           {% if post.comments %}
+             <div class="comments">
+               {% include comments.html %}
+             </div>
+           {% endif %}
+           
   					<ul class="actions pagination">
   					  {% if page.previous %}
   	  				  <li><a href="{{ page.previous.url }}" class="button big previous">Previous Post</a></li>
