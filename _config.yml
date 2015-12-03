@@ -13,9 +13,7 @@ github_username:  ricardovsilva
 
 # Build settings
 markdown: kramdown
-
 paginate: 4
-
 author: Ricardo da Verdade Silva
-
 gems: [jekyll-paginate]
+lang: pt-br
