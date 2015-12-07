@@ -6,9 +6,265 @@
 </description>
     <link>http://ricardovsilva.github.io/</link>
     <atom:link href="http://ricardovsilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 04 Dec 2015 00:55:07 +0000</pubDate>
-    <lastBuildDate>Fri, 04 Dec 2015 00:55:07 +0000</lastBuildDate>
+    <pubDate>Mon, 07 Dec 2015 14:47:05 +0000</pubDate>
+    <lastBuildDate>Mon, 07 Dec 2015 14:47:05 +0000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Programacao Realmente Orientada A Objetos Parte 1 Conceitos Basicos</title>
+        <description>&lt;p&gt;Sou programador profissional a pouco mais de 3 anos. Apesar de parecer pouco tempo, já vi muita coisa deste mercado. Já vi muitos profissionais com 15 anos de experiência, diversos títulos, e que até hoje não sabem programar de forma REALMENTE orientada a objetos.&lt;/p&gt;
+
+&lt;p&gt;Olhe a sua volta, veja os seus colegas de universidade ou de trabalho, olhe para si mesmo.&lt;/p&gt;
+
+&lt;p&gt;Convido-lhe, a junto comigo, aprender um pouquinho mais e adicionar a sua bagagem intelectual um diferencial de mercado. Vamos aprender algo que não depende de uma linguagem de programação eslecificade REALMENTE programar de forma orientada a objetos. Este é um conhecimento que pode ser levado para qualquer linguagem de programação.&lt;/p&gt;
+
+&lt;p&gt;Neste primeiro post eu abordarei:
+- O que é orientação a objetos?
+- Classes
+- Métodos
+- Propriedades/Atributos
+- Instâncias (objetos)
+- Os pilares da Orientação a Objetos
+- Herança
+- Polimorfismo
+- Encapsulamento
+- Eu realmente oriento a objetos?&lt;/p&gt;
+
+&lt;p&gt;Faça um ótimo proveito e, principalmente, divirta-se !&lt;/p&gt;
+
+&lt;h2 id=&quot;o-que--orientao-a-objetos-oo&quot;&gt;O que é Orientação a Objetos (O.O.)?&lt;/h2&gt;
+&lt;p&gt;Orientação a objetos é uma forma de programar que, praticamente, independe de linguagem (uma vez que a maioria das linguagens de programação suportam a orientação a objetos).&lt;/p&gt;
+
+&lt;p&gt;Consiste em programar de forma que, cada trecho do seu código tente ser um espelho de algo que existe no mundo real.&lt;/p&gt;
+
+&lt;p&gt;A O.O. nos permite reaproveitar o nosso código sem precisar copiar e colar, além de organizar o código de forma que ele seja expansível. Graças a O.O. temos softwares de tal complexidade que, seria praticamente impossível fazer de forma estruturada (programação convencional, linha atrás de linha).&lt;/p&gt;
+
+&lt;p&gt;Toda linguagem de programação que suporta a orientação a objetos possuem, elementarmente, suporte a criação de quatro elementos de programação. São eles: Classes, Métodos, Propriedades e Instâncias.&lt;/p&gt;
+
+&lt;h3 id=&quot;mtodos&quot;&gt;Métodos&lt;/h3&gt;
+&lt;p&gt;Os métodos são funções, algoritmos, que executam uma determinada ação. O que diferencia um método de uma simples função, é que um método, normalmente, altera o estado (PROPRIEDADES) de um determinado objeto.
+Métodos SEMPRE, fundamentalmente, são ações. Sempre descreva um método com um verbo de AÇÃO.&lt;/p&gt;
+
+&lt;p&gt;Se pensarmos em um carro, ele teria métodos como: acelerar, freiar, ligar, dentre outras.&lt;/p&gt;
+
+&lt;p&gt;Outro exemplo, mais voltado a sistemas, um &lt;strong&gt;cliente de banco&lt;/strong&gt; pode &lt;strong&gt;sacar dinheiro&lt;/strong&gt;, &lt;strong&gt;depositar&lt;/strong&gt;, &lt;strong&gt;solicitar empréstimo&lt;/strong&gt;, &lt;strong&gt;comprar produtos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Caso esteja confuso para você, pense em um método como sendo uma função ou um algoritmo qualquer (na prática não há muita diferença).
+Mas não esqueça, métodos são sempre VERBOS DE AÇÃO.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;propriedades-ou-atributos&quot;&gt;Propriedades (ou atributos)&lt;/h3&gt;
+&lt;p&gt;São &lt;strong&gt;características&lt;/strong&gt;, qualidades, daquilo que estamos tentando representar.&lt;/p&gt;
+
+&lt;p&gt;Se pensarmos em um carro, temos propriedades como: material, potência, velocidade máxima, velocidade atual, capacidade de combustivel.&lt;/p&gt;
+
+&lt;p&gt;Já utilizando o exemplo do cliente do banco, teremos propriedades como: nome, endereço, saldo bancário, limite de empréstimo, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;classe&quot;&gt;Classe&lt;/h3&gt;
+&lt;p&gt;Uma classe, nada mais é do que um mapeamento de um objeto do mundo real, porém a classe NÃO é o objeto. A classe é como se fosse um molde, uma receita.&lt;/p&gt;
+
+&lt;p&gt;Toda classe possui &lt;strong&gt;métodos&lt;/strong&gt; (ações) e &lt;strong&gt;propriedades&lt;/strong&gt; (qualidades).&lt;/p&gt;
+
+&lt;p&gt;Toda classe também possui um, ou mais, método especial que é invocado quando criamos uma &lt;strong&gt;instância&lt;/strong&gt; desta classe (não se preocupe, explicarei mais a frente o que é uma instância). Este método especial é chamado de &lt;strong&gt;construtor&lt;/strong&gt;. O construtor é o único método que não é um verbo de ação, mas sim o nome da própria classe.&lt;/p&gt;
+
+&lt;p&gt;Ao criarmos uma classe de um carro, nós estamos descrevendo o que um carro TEM (propriedades) e o que um carro pode FAZER (métodos). Vejamos um exemplo em C#:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Carro&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Essas são as nossas propriedades&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VelocidadeMaxima&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TaxaDeAceleracao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Modelo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NomeFabricante&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Podemos definir algumas coisas aqui quando&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//cada carro for criado. Este é o nosso construtor.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Este é o nosso método, repare que ele aumenta&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//a velocidade atual com a taxa de aceleração.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TaxaDeAceleracao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;instncia&quot;&gt;Instância&lt;/h2&gt;
+&lt;p&gt;A instância é o objeto propriamente dito. Pegamos a nossa “receita” (&lt;strong&gt;classe&lt;/strong&gt;) do carro, e a partir dela criamos vários carros. Cada carro criado é uma instância.
+&amp;gt; É importante ressaltar que cada instância possui suas próprias propriedades, com valores independentes.&lt;/p&gt;
+
+&lt;p&gt;Por exemplo (em c#):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Este método é o nosso programa principal.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//criamos uma instância de Carro&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Modelo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Celta 1.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fabricante&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Chevrolet&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VelocidadeMaxima&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TaxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Modelo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Eclipse&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fabricante&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Mitsubishi&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VelocidadeMaxima&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;220&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TaxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Será impresso 20&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Será impresso 40&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;os-pilares-da-orientao-a-objetos&quot;&gt;Os pilares da orientação a objetos&lt;/h2&gt;
+&lt;p&gt;A orientação a objetos tem três pilares básicos: herança, polimorfismo e encapsulamento. Não é correto afirmar que programamos de forma orientada a objetos só porque criamos meia dúzia de classes para separar nossa lógica. É importantiíssimo respeitar esses três pilares.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;*Não se preocupe se não entende-los agora. O importante é saber que eles existem e ter uma breve noção do que é cada um. Nos próximos posts veremos na prática cada um deles acontecendo. *&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;herana&quot;&gt;Herança&lt;/h3&gt;
+&lt;p&gt;A herança é a capacidade que uma classe tem de “aprender”, ou “absorver” capacidades de outras classes. A herança nos poupa muita escrita de código.
+Imagine a seguinte situação, uma &lt;strong&gt;pessoa&lt;/strong&gt; pode ser representada pela seguinte classe:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pessoa&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Idade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Nome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CPF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Este é o nosso construtor.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Pessoa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Lógica de inicialização da pessoa aqui.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Caminhar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Lógica para fazer a pessoa caminhar.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Comer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Lógica para comer.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Podemos ver que cada pessoa possui suas propriedades (idade, nome, cpf e rg) e ações (caminhar e comer).
+Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco É uma pessoa. Logo, cliente de banco pode HERDAR de pessoa.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClienteDeBanco&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pessoa&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Agencia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContaCorrente&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ClienteDeBanco&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//Aqui vai nossa lógica de inicialização&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;EfetuarSaque&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//Lógica para efetuar saque.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O que exatamente o código acima significa? Significa que, toda instância de ClienteDeBanco que criarmos, poderá fazer tudo o que uma Pessoa faz (caminhar e comer), terá as mesmas propriedades que uma Pessoa tem (idade, cpf, rg, nome), e além disso ele também terá uma Agência e uma Conta Corrente, além de poder efetuar saques.&lt;/p&gt;
+
+&lt;h3 id=&quot;polimorfismo&quot;&gt;Polimorfismo&lt;/h3&gt;
+&lt;p&gt;Polimorfismo, basicamente falando, é a capacidade que um objeto, de um determinado tipo, tem de se transformar em outro, ou se passar por outro.&lt;/p&gt;
+
+&lt;p&gt;É importante saber que é possível o Polimorfismo acontecer, e que toda linguagem O.O. lhe permite fazer isso.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Não se preocupe sobre COMO ou QUANDO você irá usar o polimorfismo. Veremos isso mais a frente.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;encapsulamento&quot;&gt;Encapsulamento&lt;/h3&gt;
+&lt;p&gt;Encapsulamento é a capacidade do objeto (ou de um sistema) de “esconder” dos outros objetos tudo aquilo que não é relevante a eles.&lt;/p&gt;
+
+&lt;p&gt;Você deve ter reparado que nos códigos de exemplo deste post, a palavra &lt;strong&gt;public&lt;/strong&gt; apareceu bastante. Esta palavra é o atributo de visibilidade de uma propriedade ou método.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dizer que algo, em um sistema O.O. é público, significa dizer que qualquer classe pode acessar aquilo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Além do &lt;strong&gt;public&lt;/strong&gt; poderíamos usar o &lt;strong&gt;private&lt;/strong&gt;. Mas quando usar o private? Quando vamos escrever algum método (ou propriedade) que “ninguém” mais do seu sistema precisa conhecer.&lt;/p&gt;
+
+&lt;p&gt;Voltemos a falar do carro, quando você entra no carro e vira a chave, você está dando para ele o comando de “Ligar”, para ligar, é necessário energizar o motor, dar a partida, injetar gasolina, dentre outras coisas que o carro faz para você. O que o carro faz é &lt;strong&gt;encapsular&lt;/strong&gt; todas essas funções. Você não precisa saber que elas acontecem e muito menos como acontecem (a menos que você seja um apaixonado por mecânica), você só precisa saber que ao virar a chave o carro ligará.&lt;/p&gt;
+
+&lt;p&gt;Como isso ficaria em termos de código?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Carro&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Essas são as nossas propriedades&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VelocidadeMaxima&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TaxaDeAceleracao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Modelo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NomeFabricante&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VelocidadeAtual&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TaxaDeAceleracao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Ligar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DarPartida&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LigarOMotor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LigarPainel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;25&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;DarPartida&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;28&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Lógica para dar a partida&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;30&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;LigarOMotor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;32&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;33&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Lógica para ligar o motor&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;34&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;35&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;36&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;LigarPainel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;37&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;38&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Lógica para liga o painel&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;39&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;40&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;concluso&quot;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;Neste artigo eu tentei explicar e exemplificar a base da orientação a objetos. Mas programar de forma realmente orientada a objetos é bem mais do que separar funções em classes e ter alguma estrutura de herança. 
+Nos próximos artigos dessa série eu abordarei os princípios do S.O.L.I.D e ao final, a cereja do nosso bolo serão as metodologias de teste T.D.D. e B.D.D., portanto, não perca!&lt;/p&gt;
+
+&lt;p&gt;Dúvidas, sugestões? Deixe o seu comentário.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://ricardovsilva.github.io/2015/12/07/programacao-realmente-orientada-a-objetos-parte-1-conceitos-basicos.html</link>
+        <guid isPermaLink="true">http://ricardovsilva.github.io/2015/12/07/programacao-realmente-orientada-a-objetos-parte-1-conceitos-basicos.html</guid>
+        
+        <category>Orientação a Objetos</category>
+        
+        <category>Profissionalizando</category>
+        
+        <category>P.O.O.</category>
+        
+        <category>Programação</category>
+        
+        
+      </item>
     
       <item>
         <title>Aprendendo Mais Facilmente a Programar</title>
@@ -69,7 +325,7 @@ A disponibilidade, ou não, de um determinado operador vai impactar diretamente 
 &lt;h3 id=&quot;controladores-de-fluxo&quot;&gt;Controladores de Fluxo&lt;/h3&gt;
 &lt;p&gt;O que são os controladores de fluxo? Para que servem? Quem são eles?&lt;/p&gt;
 
-&lt;p&gt;Como o próprio nome sugere, eles servem para controlar o fluxo de uma aplicação. &lt;/p&gt;
+&lt;p&gt;Como o próprio nome sugere, eles servem para controlar o fluxo de uma aplicação.&lt;/p&gt;
 
 &lt;p&gt;É através deles que o seu programa terá a inteligência para tomar decisões. São os controladores de fluxo que permitirão ao seu programa
 fazer algo, ou não. Os controladores de fluxo são:&lt;/p&gt;
