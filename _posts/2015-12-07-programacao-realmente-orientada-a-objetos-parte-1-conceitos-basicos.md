@@ -1,4 +1,5 @@
-uthor: Ricardo da Verdade Silva
+---
+author: Ricardo da Verdade Silva
 
 layout: post
 Ricardo
@@ -166,6 +167,7 @@ public void Comer()
 
 Podemos ver que cada pessoa possui suas propriedades (idade, nome, cpf e rg) e ações (caminhar e comer).
 Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco É uma pessoa. Logo, cliente de banco pode HERDAR de pessoa.
+
 {% highlight csharp lineos %}
 public class ClienteDeBanco : Pessoa
 {
@@ -206,7 +208,7 @@ Voltemos a falar do carro, quando você entra no carro e vira a chave, você est
 
 Como isso ficaria em termos de código? 
 
-{ % highlight csharp linenos % } 
+{% highlight csharp linenos %} 
 public class Carro
 {
 //Essas são as nossas propriedades
@@ -247,7 +249,7 @@ private void LigarPainel()
 //Lógica para liga o painel
 } 
 }
-{ % endhighlight % } 
+{% endhighlight %} 
 
 ## Conclusão 
 Neste artigo eu tentei explicar e exemplificar a base da orientação a objetos. Mas programar de forma realmente orientada a objetos é bem mais do que separar funções em classes e ter alguma estrutura de herança. 
