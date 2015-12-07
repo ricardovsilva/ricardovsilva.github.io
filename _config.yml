@@ -1,25 +1,19 @@
-name: "Mr Truth Development"
-description: "Mr Truth - Tentando descomplicar o desenvolvimento de software"
+# Site settings
+title: Mr Truth Development
+email: ricardovsilva@msn.com
+description: > # this means to ignore newlines until "baseurl:"
+  Dicas e tutoriais destinados a todos que desejam entrar ou dar um salto
+  no mercado de trabalho de desenvolvimento de software.
+  Esta é minha tentativa de devolver um pouco de tudo o que a comunidade
+  opensource já me deu.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ricardovsilva.github.io" # the base hostname & protocol for your site
+twitter_username: MrTruthDev
+github_username:  ricardovsilva
 
-url: "[YOUR DOMAIN]"
-
-paginate: 5
-
-permalink: pretty
-
-defaults:
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            layout: "post"
-    -
-        scope:
-            path: ""
-        values:
-            timezone:  America/Sao_Paulo
-            layout: "default"
-    
-    
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+# Build settings
+markdown: kramdown
+paginate: 4
+author: Ricardo da Verdade Silva
+gems: [jekyll-paginate]
+lang: pt-BR

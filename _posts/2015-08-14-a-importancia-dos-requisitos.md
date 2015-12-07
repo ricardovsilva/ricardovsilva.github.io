@@ -6,6 +6,15 @@ tags:
  - análise de requisitos
  - engenharia de software
  - tradução
+comments: true
+resume: 
+ Muitas vezes, durante o ciclo de desenvolvimento de um software, os requisitos
+ são deixados de lado. Muitos de nós nem sabemos a real importância, e impacto
+ que uma, boa (ou inexistente), análise de requisitos tem em todo o ciclo de desenvolvimento
+ de um software.
+ O livro Code Complete deixou esta importância clara para mim. Nesta tradução livre tento trazer
+ este valiosíssimo conhecimento a vocês.
+
 ---
 
 Este post é uma tradução livre que eu fiz do livro Code
