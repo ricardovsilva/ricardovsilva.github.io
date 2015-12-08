@@ -17,21 +17,21 @@ resume:
 ---
 Sou programador profissional a pouco mais de 3 anos. Apesar de parecer pouco tempo, já vi muita coisa deste mercado. Já vi muitos profissionais com 15 anos de experiência, diversos títulos, e que até hoje não sabem programar de forma REALMENTE orientada a objetos.
 
-Olhe a sua volta, veja os seus colegas de universidade ou de trabalho, olhe para si mesmo.
+Olhe a sua volta, veja os seus colegas de universidade ou de trabalho, olhe para si mesmo e questione-se: eu estou fazendo da melhor forma possível?
 
 Convido-lhe, a junto comigo, aprender um pouquinho mais e adicionar a sua bagagem intelectual um diferencial de mercado. Vamos aprender algo que não depende de uma linguagem de programação eslecificade REALMENTE programar de forma orientada a objetos. Este é um conhecimento que pode ser levado para qualquer linguagem de programação.
 
-Neste primeiro post eu abordarei:
-- O que é orientação a objetos?
-- Classes
-- Métodos
-- Propriedades/Atributos
-- Instâncias (objetos)
-- Os pilares da Orientação a Objetos
-- Herança
-- Polimorfismo
-- Encapsulamento
-- Eu realmente oriento a objetos?
+Neste primeiro post eu abordo:
+
+  - O que é orientação a objetos?
+  - Classes
+  - Métodos
+  - Propriedades/Atributos
+  - Instâncias (objetos)
+  - Os pilares da Orientação a Objetos
+  - Herança
+  - Polimorfismo
+  - Encapsulamento
 
 Faça um ótimo proveito e, principalmente, divirta-se !
 
@@ -75,30 +75,31 @@ Ao criarmos uma classe de um carro, nós estamos descrevendo o que um carro TEM 
 {% highlight csharp linenos %}
 public class Carro
 {
-//Essas são as nossas propriedades
-public int VelocidadeAtual;
-public int VelocidadeMaxima;
-public int TaxaDeAceleracao;
-public string Modelo;
-public string NomeFabricante;
+  //Essas são as nossas propriedades
+  public int VelocidadeAtual;
+  public int VelocidadeMaxima;
+  public int TaxaDeAceleracao;
+  public string Modelo;
+  public string NomeFabricante;
 
-public Carro()
-{
-//Podemos definir algumas coisas aqui quando
-//cada carro for criado. Este é o nosso construtor.
-}
+  public Carro()
+  {
+    //Podemos definir algumas coisas aqui quando
+    //cada carro for criado. Este é o nosso construtor.
+  }
 
-//Este é o nosso método, repare que ele aumenta
-//a velocidade atual com a taxa de aceleração.
-public void Acelerar()
-{
-VelocidadeAtual += TaxaDeAceleracao;
-}
+  //Este é o nosso método, repare que ele aumenta
+  //a velocidade atual com a taxa de aceleração.
+  public void Acelerar()
+  {
+    VelocidadeAtual += TaxaDeAceleracao;
+  }
 }
 {% endhighlight %}
 
-## Instância
+### Instância
 A instância é o objeto propriamente dito. Pegamos a nossa "receita" (**classe**) do carro, e a partir dela criamos vários carros. Cada carro criado é uma instância.
+
 > É importante ressaltar que cada instância possui suas próprias propriedades, com valores independentes.
 
 Por exemplo (em c#):
@@ -107,33 +108,33 @@ Por exemplo (em c#):
 //Este método é o nosso programa principal.
 public void main()
 {
-var carro1 = new Carro(); //criamos uma instância de Carro
-var carro2 = new Carro();
+  var carro1 = new Carro(); //criamos uma instância de Carro
+  var carro2 = new Carro();
 
-carro1.Modelo = "Celta 1.0";
-carro1.Fabricante = "Chevrolet";
-carro1.VelocidadeMaxima = 120;
-carro1.TaxaDeAceleracao = 20;
-carro1.VelocidadeAtual = 0;
+  carro1.Modelo = "Celta 1.0";
+  carro1.Fabricante = "Chevrolet";
+  carro1.VelocidadeMaxima = 120;
+  carro1.TaxaDeAceleracao = 20;
+  carro1.VelocidadeAtual = 0;
 
-carro2.Modelo = "Eclipse";
-carro2.Fabricante = "Mitsubishi";
-carro2.VelocidadeMaxima = 220;
-carro2.TaxaDeAceleracao = 40;
-carro2.VelocidadeAtual = 0;
+  carro2.Modelo = "Eclipse";
+  carro2.Fabricante = "Mitsubishi";
+  carro2.VelocidadeMaxima = 220;
+  carro2.TaxaDeAceleracao = 40;
+  carro2.VelocidadeAtual = 0;
 
-carro1.Acelerar();
-Console.WriteLine(carro1.VelocidadeAtual); //Será impresso 20
+  carro1.Acelerar();
+  Console.WriteLine(carro1.VelocidadeAtual); //Será impresso 20
 
-carro2.Acelerar();
-Console.WriteLine(carro2.VelocidadeAtual); //Será impresso 40
+  carro2.Acelerar();
+  Console.WriteLine(carro2.VelocidadeAtual); //Será impresso 40
 }
 {% endhighlight %}
 
 ## Os pilares da orientação a objetos
 A orientação a objetos tem três pilares básicos: herança, polimorfismo e encapsulamento. Não é correto afirmar que programamos de forma orientada a objetos só porque criamos meia dúzia de classes para separar nossa lógica. É importantiíssimo respeitar esses três pilares.
 
-> *Não se preocupe se não entende-los agora. O importante é saber que eles existem e ter uma breve noção do que é cada um. Nos próximos posts veremos na prática cada um deles acontecendo. *
+>*Não se preocupe se não entende-los agora. O importante é saber que eles existem e ter uma breve noção do que é cada um. Nos próximos posts veremos na prática cada um deles acontecendo.*
 
 ### Herança
 A herança é a capacidade que uma classe tem de "aprender", ou "absorver" capacidades de outras classes. A herança nos poupa muita escrita de código.
@@ -142,26 +143,26 @@ Imagine a seguinte situação, uma **pessoa** pode ser representada pela seguint
 {% highlight csharp linenos %}
 public class Pessoa
 {
-public int Idade;
-public string Nome;
-public string CPF;
-public string RG;
+  public int Idade;
+  public string Nome;
+  public string CPF;
+  public string RG;
 
-//Este é o nosso construtor.
-public Pessoa()
-{
-//Lógica de inicialização da pessoa aqui.
-}
+  //Este é o nosso construtor.
+  public Pessoa()
+  {
+    //Lógica de inicialização da pessoa aqui.
+  }
 
-public void Caminhar()
-{
-//Lógica para fazer a pessoa caminhar.
-}
+  public void Caminhar()
+  {
+    //Lógica para fazer a pessoa caminhar.
+  }
 
-public void Comer()
-{
-//Lógica para comer.
-}
+  public void Comer()
+  {
+    //Lógica para comer.
+  }
 }
 {% endhighlight %}
 
@@ -171,18 +172,18 @@ Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco
 {% highlight csharp lineos %}
 public class ClienteDeBanco : Pessoa
 {
-public string Agencia;
-public string ContaCorrente;
+  public string Agencia;
+  public string ContaCorrente;
 
-public ClienteDeBanco()
-{
-//Aqui vai nossa lógica de inicialização
-}
+  public ClienteDeBanco()
+  {
+    //Aqui vai nossa lógica de inicialização
+  }
 
-public int EfetuarSaque()
-{
-//Lógica para efetuar saque.
-}
+  public int EfetuarSaque()
+  {
+    //Lógica para efetuar saque.
+  }
 }
 {% endhighlight %}
 
@@ -200,7 +201,7 @@ Encapsulamento é a capacidade do objeto (ou de um sistema) de "esconder" dos ou
 
 Você deve ter reparado que nos códigos de exemplo deste post, a palavra **public** apareceu bastante. Esta palavra é o atributo de visibilidade de uma propriedade ou método. 
 
->Dizer que algo, em um sistema O.O. é público, significa dizer que qualquer classe pode acessar aquilo. 
+> Dizer que algo, em um sistema O.O. é público, significa dizer que qualquer classe pode acessar aquilo. 
 
 Além do **public** poderíamos usar o **private**. Mas quando usar o private? Quando vamos escrever algum método (ou propriedade) que "ninguém" mais do seu sistema precisa conhecer. 
 
@@ -208,46 +209,46 @@ Voltemos a falar do carro, quando você entra no carro e vira a chave, você est
 
 Como isso ficaria em termos de código? 
 
-{% highlight csharp linenos %} 
+{% highlight csharp lineos %} 
 public class Carro
 {
-//Essas são as nossas propriedades
-public int VelocidadeAtual;
-public int VelocidadeMaxima;
-public int TaxaDeAceleracao;
-public string Modelo;
-public string NomeFabricante;
+  //Essas são as nossas propriedades
+  public int VelocidadeAtual;
+  public int VelocidadeMaxima;
+  public int TaxaDeAceleracao;
+  public string Modelo;
+  public string NomeFabricante;
 
-public Carro()
-{
-}
+  public Carro()
+  {
+  }
 
-public void Acelerar()
-{
-VelocidadeAtual += TaxaDeAceleracao;
-}
+  public void Acelerar()
+  {
+    VelocidadeAtual += TaxaDeAceleracao;
+  }
 
-public void Ligar() 
-{
-DarPartida();
-LigarOMotor();
-LigarPainel();
-} 
+  public void Ligar() 
+  {
+    DarPartida();
+    LigarOMotor();
+    LigarPainel();
+  } 
 
-private void DarPartida() 
-{
-//Lógica para dar a partida
-} 
+  private void DarPartida() 
+  {
+    //Lógica para dar a partida
+  } 
 
-private void LigarOMotor() 
-{
-//Lógica para ligar o motor
-} 
+  private void LigarOMotor() 
+  {
+    //Lógica para ligar o motor
+  } 
 
-private void LigarPainel() 
-{
-//Lógica para liga o painel
-} 
+  private void LigarPainel() 
+  {
+    //Lógica para liga o painel
+  } 
 }
 {% endhighlight %} 
 
