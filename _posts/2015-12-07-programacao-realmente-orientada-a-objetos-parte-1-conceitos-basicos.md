@@ -258,7 +258,7 @@ Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco
 
 <code-block csharp ruby>
 <div>
-{% highlight csharp lineos %}
+{% highlight csharp linenos %}
 public class ClienteDeBanco : Pessoa
 {
   public string Agencia;
@@ -277,7 +277,7 @@ public class ClienteDeBanco : Pessoa
 {% endhighlight %}
 </div>
 <div>
-{% highlight ruby lineos %}
+{% highlight ruby linenos %}
 class ClienteDeBanco < Pessoa
   @agencia = ""
   @contaCorrente = ""
@@ -315,7 +315,7 @@ Como isso ficaria em termos de código?
 
 <code-block csharp ruby>
 <div>
-{% highlight csharp lineos %} 
+{% highlight csharp linenos %} 
 public class Carro
 {
   //Essas são as nossas propriedades
@@ -359,7 +359,7 @@ public class Carro
 {% endhighlight %} 
 </div>
 <div>
-{% highlight ruby lineos %} 
+{% highlight ruby linenos %} 
 class Carro
   @velocidadeAtual = 0
   @velocidadeMaxima = 0
