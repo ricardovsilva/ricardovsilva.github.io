@@ -40,6 +40,8 @@
               <strong><i> {{ page.resume }}</i></strong></br></br>
               
               {{ content }}
+              
+              {% include share.html %}
               <footer>
                 <ul class="stats">
                 {% for tag in page.tags limit:3 %}
