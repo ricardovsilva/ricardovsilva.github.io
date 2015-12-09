@@ -101,21 +101,27 @@ public class Carro
 </div>
 <div>
 {% highlight ruby linenos %}
-  class Carro
+class Carro
+  #definimos os atributos
+  attr_accessor :velocidadeAtual,
+                :velocidadeMaxima, 
+                :taxaDeAceleracao, 
+                :modelo,
+                :nomeFabricante
+
+  def initialize()
+    #inicializamos os atributos
     @velocidadeAtual = 0
     @velocidadeMaxima = 0
     @taxaDeAceleracao = 0
     @modelo = ""
     @nomeFabricante = ""
-    
-    def initialize()
-      #lógica de inicialização aqui
-    end
-    
-    def acelerar()
-      @velocidadeAtual += @taxaDeAceleracao
-    end
   end
+ 
+ def acelerar()
+   @velocidadeAtual += @taxaDeAceleracao
+ end
+end
 {% endhighlight %}
 </div>
 </code-block>
@@ -167,13 +173,13 @@ def main()
   carro2 = Carro.new
 
   carro1.modelo = "Celta 1.0"
-  carro1.fabricante = "Chevrolet"
+  carro1.nomeFabricante = "Chevrolet"
   carro1.velocidadeMaxima = 120
   carro1.taxaDeAceleracao = 20
   carro1.velocidadeAtual = 0
 
   carro2.modelo = "Eclipse"
-  carro2.fabricante = "Mitsubishi"
+  carro2.nomeFabricante = "Mitsubishi"
   carro2.velocidadeMaxima = 220
   carro2.taxaDeAceleracao = 40
   carro2.velocidadeAtual = 0
@@ -228,27 +234,28 @@ public class Pessoa
 <div>
 {% highlight ruby linenos %}
 class Pessoa
-  @idade = 0
-  @nome = ""
-  @CPF = ""
-  @RG = ""
+    #definimos os atributos
+  attr_accessor :idade,
+                :nome,
+                :CPF,
+                :RG
 
   #Este é o nosso construtor
   def initialize()
-  {
-    #Lógica de inicialização da pessoa aqui.
-  }
+    @idade = 0
+    @nome = ""
+    @CPF = ""
+    @RG = ""
+  end
   
   def caminhar()
-  {
     #Lógica para fazer a pessoa caminhar.
-  }
+  end
 
   def comer()
-  {
     #Lógica para comer.
-  }
-}
+  end
+end
 {% endhighlight %}
 </div>
 </code-block>
@@ -279,14 +286,18 @@ public class ClienteDeBanco : Pessoa
 <div>
 {% highlight ruby linenos %}
 class ClienteDeBanco < Pessoa
-  @agencia = ""
-  @contaCorrente = ""
-  
+  attr_accessor :agencia,
+                :contaCorrente
+
+  def initialize
+    @agencia = ""
+    @contaCorrente = ""
+  end
+
   def efetuarSaque
-  {
     #Lógica para efetuar saque.
-  }
-}
+  end
+end
 {% endhighlight %}
 </div>
 </code-block>
@@ -361,13 +372,18 @@ public class Carro
 <div>
 {% highlight ruby linenos %} 
 class Carro
-  @velocidadeAtual = 0
-  @velocidadeMaxima = 0
-  @taxaDeAceleracao = 0
-  @modelo = ""
-  @nomeFabricante = ""
-  
+  attr_accessor :velocidadeAtual,
+                :velocidadeMaxima,
+                :taxaDeAceleracao,
+                :modelo,
+                :nomeFabricante
+
   def initialize()
+    @velocidadeAtual = 0
+    @velocidadeMaxima = 0
+    @taxaDeAceleracao = 0
+    @modelo = ""
+    @nomeFabricante = ""
   end
   
   def acelerar()

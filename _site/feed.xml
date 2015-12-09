@@ -6,8 +6,8 @@
 </description>
     <link>http://ricardovsilva.github.io/</link>
     <atom:link href="http://ricardovsilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 09 Dec 2015 03:27:42 +0000</pubDate>
-    <lastBuildDate>Wed, 09 Dec 2015 03:27:42 +0000</lastBuildDate>
+    <pubDate>Wed, 09 Dec 2015 17:27:35 +0000</pubDate>
+    <lastBuildDate>Wed, 09 Dec 2015 17:27:35 +0000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -102,20 +102,26 @@ Mas não esqueça, métodos são sempre VERBOS DE AÇÃO.&lt;/em&gt;&lt;/p&gt;
 &lt;div&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Carro&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeMaxima&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@nomeFabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;     
-&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;#lógica de inicialização aqui&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     
-&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;       &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#definimos os atributos&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;   &lt;span class=&quot;kp&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:velocidadeAtual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:velocidadeMaxima&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:taxaDeAceleracao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:modelo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:nomeFabricante&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#inicializamos os atributos&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeMaxima&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@nomeFabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt;  
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt;    &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/code-block&gt;
@@ -167,13 +173,13 @@ Mas não esqueça, métodos são sempre VERBOS DE AÇÃO.&lt;/em&gt;&lt;/p&gt;
 &lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Celta 1.0&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Chevrolet&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nomeFabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Chevrolet&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;velocidadeMaxima&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;taxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Eclipse&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Mitsubishi&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nomeFabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Mitsubishi&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;velocidadeMaxima&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;220&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;taxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
@@ -230,27 +236,28 @@ Imagine a seguinte situação, uma &lt;strong&gt;pessoa&lt;/strong&gt; pode ser 
 &lt;div&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pessoa&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@idade&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@nome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@CPF&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@RG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#Este é o nosso construtor&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica de inicialização da pessoa aqui.&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;caminhar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para fazer a pessoa caminhar.&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;comer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para comer.&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#definimos os atributos&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;   &lt;span class=&quot;kp&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:idade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:nome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:CPF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:RG&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#Este é o nosso construtor&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@idade&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@nome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@CPF&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@RG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;caminhar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para fazer a pessoa caminhar.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;comer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para comer.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/code-block&gt;
@@ -280,15 +287,19 @@ Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco
 &lt;/div&gt;
 &lt;div&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClienteDeBanco&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Pessoa&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@agencia&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@contaCorrente&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;efetuarSaque&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para efetuar saque.&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClienteDeBanco&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Pessoa&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;   &lt;span class=&quot;kp&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:agencia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:contaCorrente&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@agencia&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@contaCorrente&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;efetuarSaque&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para efetuar saque.&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/code-block&gt;
@@ -367,40 +378,45 @@ Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco
 &lt;div&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Carro&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@velocidadeMaxima&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@nomeFabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt;   &lt;span class=&quot;kp&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:velocidadeAtual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:velocidadeMaxima&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:taxaDeAceleracao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:modelo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;                 &lt;span class=&quot;ss&quot;&gt;:nomeFabricante&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ligar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;darPartida&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;ligarOMotor&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;ligarPainel&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;darPartida&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para dar a partida&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;24&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;25&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ligarOMotor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;26&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para ligar o motor&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;27&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;28&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;29&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ligarPainel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;30&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para ligar o painel&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;31&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;32&lt;/span&gt;   
-&lt;span class=&quot;lineno&quot;&gt;33&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#Aqui tornamos nossos métodos privados&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;34&lt;/span&gt;   &lt;span class=&quot;kp&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:darPartida&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:ligarOMotor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:ligarPainel&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;35&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeMaxima&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@nomeFabricante&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;acelerar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt;     &lt;span class=&quot;vi&quot;&gt;@velocidadeAtual&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@taxaDeAceleracao&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ligar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;darPartida&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;ligarOMotor&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;ligarPainel&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;24&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;25&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;26&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;darPartida&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;27&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para dar a partida&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;28&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;29&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;30&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ligarOMotor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;31&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para ligar o motor&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;32&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;33&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;34&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ligarPainel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;35&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;#Lógica para ligar o painel&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;36&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;37&lt;/span&gt;   
+&lt;span class=&quot;lineno&quot;&gt;38&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;#Aqui tornamos nossos métodos privados&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;39&lt;/span&gt;   &lt;span class=&quot;kp&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:darPartida&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:ligarOMotor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:ligarPainel&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;40&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
  
 &lt;/div&gt;
 &lt;/code-block&gt;

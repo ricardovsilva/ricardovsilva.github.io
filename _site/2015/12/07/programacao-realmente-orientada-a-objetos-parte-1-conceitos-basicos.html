@@ -199,20 +199,26 @@ Mas não esqueça, métodos são sempre VERBOS DE AÇÃO.</em></p>
 <div>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">Carro</span>
-<span class="lineno"> 2</span>     <span class="vi">@velocidadeAtual</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 3</span>     <span class="vi">@velocidadeMaxima</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 4</span>     <span class="vi">@taxaDeAceleracao</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 5</span>     <span class="vi">@modelo</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 6</span>     <span class="vi">@nomeFabricante</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 7</span>     
-<span class="lineno"> 8</span>     <span class="k">def</span> <span class="nf">initialize</span><span class="p">()</span>
-<span class="lineno"> 9</span>       <span class="c1">#lógica de inicialização aqui</span>
-<span class="lineno">10</span>     <span class="k">end</span>
-<span class="lineno">11</span>     
-<span class="lineno">12</span>     <span class="k">def</span> <span class="nf">acelerar</span><span class="p">()</span>
-<span class="lineno">13</span>       <span class="vi">@velocidadeAtual</span> <span class="o">+=</span> <span class="vi">@taxaDeAceleracao</span>
-<span class="lineno">14</span>     <span class="k">end</span>
-<span class="lineno">15</span>   <span class="k">end</span></code></pre></div>
+<span class="lineno"> 2</span>   <span class="c1">#definimos os atributos</span>
+<span class="lineno"> 3</span>   <span class="kp">attr_accessor</span> <span class="ss">:velocidadeAtual</span><span class="p">,</span>
+<span class="lineno"> 4</span>                 <span class="ss">:velocidadeMaxima</span><span class="p">,</span> 
+<span class="lineno"> 5</span>                 <span class="ss">:taxaDeAceleracao</span><span class="p">,</span> 
+<span class="lineno"> 6</span>                 <span class="ss">:modelo</span><span class="p">,</span>
+<span class="lineno"> 7</span>                 <span class="ss">:nomeFabricante</span>
+<span class="lineno"> 8</span> 
+<span class="lineno"> 9</span>   <span class="k">def</span> <span class="nf">initialize</span><span class="p">()</span>
+<span class="lineno">10</span>     <span class="c1">#inicializamos os atributos</span>
+<span class="lineno">11</span>     <span class="vi">@velocidadeAtual</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">12</span>     <span class="vi">@velocidadeMaxima</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">13</span>     <span class="vi">@taxaDeAceleracao</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">14</span>     <span class="vi">@modelo</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">15</span>     <span class="vi">@nomeFabricante</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">16</span>   <span class="k">end</span>
+<span class="lineno">17</span>  
+<span class="lineno">18</span>  <span class="k">def</span> <span class="nf">acelerar</span><span class="p">()</span>
+<span class="lineno">19</span>    <span class="vi">@velocidadeAtual</span> <span class="o">+=</span> <span class="vi">@taxaDeAceleracao</span>
+<span class="lineno">20</span>  <span class="k">end</span>
+<span class="lineno">21</span> <span class="k">end</span></code></pre></div>
 
 </div>
 </code-block>
@@ -264,13 +270,13 @@ Mas não esqueça, métodos são sempre VERBOS DE AÇÃO.</em></p>
 <span class="lineno"> 5</span>   <span class="n">carro2</span> <span class="o">=</span> <span class="no">Carro</span><span class="o">.</span><span class="n">new</span>
 <span class="lineno"> 6</span> 
 <span class="lineno"> 7</span>   <span class="n">carro1</span><span class="o">.</span><span class="n">modelo</span> <span class="o">=</span> <span class="s2">&quot;Celta 1.0&quot;</span>
-<span class="lineno"> 8</span>   <span class="n">carro1</span><span class="o">.</span><span class="n">fabricante</span> <span class="o">=</span> <span class="s2">&quot;Chevrolet&quot;</span>
+<span class="lineno"> 8</span>   <span class="n">carro1</span><span class="o">.</span><span class="n">nomeFabricante</span> <span class="o">=</span> <span class="s2">&quot;Chevrolet&quot;</span>
 <span class="lineno"> 9</span>   <span class="n">carro1</span><span class="o">.</span><span class="n">velocidadeMaxima</span> <span class="o">=</span> <span class="mi">120</span>
 <span class="lineno">10</span>   <span class="n">carro1</span><span class="o">.</span><span class="n">taxaDeAceleracao</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="lineno">11</span>   <span class="n">carro1</span><span class="o">.</span><span class="n">velocidadeAtual</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="lineno">12</span> 
 <span class="lineno">13</span>   <span class="n">carro2</span><span class="o">.</span><span class="n">modelo</span> <span class="o">=</span> <span class="s2">&quot;Eclipse&quot;</span>
-<span class="lineno">14</span>   <span class="n">carro2</span><span class="o">.</span><span class="n">fabricante</span> <span class="o">=</span> <span class="s2">&quot;Mitsubishi&quot;</span>
+<span class="lineno">14</span>   <span class="n">carro2</span><span class="o">.</span><span class="n">nomeFabricante</span> <span class="o">=</span> <span class="s2">&quot;Mitsubishi&quot;</span>
 <span class="lineno">15</span>   <span class="n">carro2</span><span class="o">.</span><span class="n">velocidadeMaxima</span> <span class="o">=</span> <span class="mi">220</span>
 <span class="lineno">16</span>   <span class="n">carro2</span><span class="o">.</span><span class="n">taxaDeAceleracao</span> <span class="o">=</span> <span class="mi">40</span>
 <span class="lineno">17</span>   <span class="n">carro2</span><span class="o">.</span><span class="n">velocidadeAtual</span> <span class="o">=</span> <span class="mi">0</span>
@@ -327,27 +333,28 @@ Imagine a seguinte situação, uma <strong>pessoa</strong> pode ser representada
 <div>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">Pessoa</span>
-<span class="lineno"> 2</span>   <span class="vi">@idade</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 3</span>   <span class="vi">@nome</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 4</span>   <span class="vi">@CPF</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 5</span>   <span class="vi">@RG</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 6</span> 
-<span class="lineno"> 7</span>   <span class="c1">#Este é o nosso construtor</span>
-<span class="lineno"> 8</span>   <span class="k">def</span> <span class="nf">initialize</span><span class="p">()</span>
-<span class="lineno"> 9</span>   <span class="p">{</span>
-<span class="lineno">10</span>     <span class="c1">#Lógica de inicialização da pessoa aqui.</span>
-<span class="lineno">11</span>   <span class="p">}</span>
-<span class="lineno">12</span>   
-<span class="lineno">13</span>   <span class="k">def</span> <span class="nf">caminhar</span><span class="p">()</span>
-<span class="lineno">14</span>   <span class="p">{</span>
-<span class="lineno">15</span>     <span class="c1">#Lógica para fazer a pessoa caminhar.</span>
-<span class="lineno">16</span>   <span class="p">}</span>
-<span class="lineno">17</span> 
-<span class="lineno">18</span>   <span class="k">def</span> <span class="nf">comer</span><span class="p">()</span>
-<span class="lineno">19</span>   <span class="p">{</span>
-<span class="lineno">20</span>     <span class="c1">#Lógica para comer.</span>
-<span class="lineno">21</span>   <span class="p">}</span>
-<span class="lineno">22</span> <span class="p">}</span></code></pre></div>
+<span class="lineno"> 2</span>     <span class="c1">#definimos os atributos</span>
+<span class="lineno"> 3</span>   <span class="kp">attr_accessor</span> <span class="ss">:idade</span><span class="p">,</span>
+<span class="lineno"> 4</span>                 <span class="ss">:nome</span><span class="p">,</span>
+<span class="lineno"> 5</span>                 <span class="ss">:CPF</span><span class="p">,</span>
+<span class="lineno"> 6</span>                 <span class="ss">:RG</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span>   <span class="c1">#Este é o nosso construtor</span>
+<span class="lineno"> 9</span>   <span class="k">def</span> <span class="nf">initialize</span><span class="p">()</span>
+<span class="lineno">10</span>     <span class="vi">@idade</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">11</span>     <span class="vi">@nome</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">12</span>     <span class="vi">@CPF</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">13</span>     <span class="vi">@RG</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">14</span>   <span class="k">end</span>
+<span class="lineno">15</span>   
+<span class="lineno">16</span>   <span class="k">def</span> <span class="nf">caminhar</span><span class="p">()</span>
+<span class="lineno">17</span>     <span class="c1">#Lógica para fazer a pessoa caminhar.</span>
+<span class="lineno">18</span>   <span class="k">end</span>
+<span class="lineno">19</span> 
+<span class="lineno">20</span>   <span class="k">def</span> <span class="nf">comer</span><span class="p">()</span>
+<span class="lineno">21</span>     <span class="c1">#Lógica para comer.</span>
+<span class="lineno">22</span>   <span class="k">end</span>
+<span class="lineno">23</span> <span class="k">end</span></code></pre></div>
 
 </div>
 </code-block>
@@ -377,15 +384,19 @@ Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco
 </div>
 <div>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="k">class</span> <span class="nc">ClienteDeBanco</span> <span class="o">&lt;</span> <span class="no">Pessoa</span>
-<span class="lineno">2</span>   <span class="vi">@agencia</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno">3</span>   <span class="vi">@contaCorrente</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno">4</span>   
-<span class="lineno">5</span>   <span class="k">def</span> <span class="nf">efetuarSaque</span>
-<span class="lineno">6</span>   <span class="p">{</span>
-<span class="lineno">7</span>     <span class="c1">#Lógica para efetuar saque.</span>
-<span class="lineno">8</span>   <span class="p">}</span>
-<span class="lineno">9</span> <span class="p">}</span></code></pre></div>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">ClienteDeBanco</span> <span class="o">&lt;</span> <span class="no">Pessoa</span>
+<span class="lineno"> 2</span>   <span class="kp">attr_accessor</span> <span class="ss">:agencia</span><span class="p">,</span>
+<span class="lineno"> 3</span>                 <span class="ss">:contaCorrente</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span>   <span class="k">def</span> <span class="nf">initialize</span>
+<span class="lineno"> 6</span>     <span class="vi">@agencia</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno"> 7</span>     <span class="vi">@contaCorrente</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno"> 8</span>   <span class="k">end</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span>   <span class="k">def</span> <span class="nf">efetuarSaque</span>
+<span class="lineno">11</span>     <span class="c1">#Lógica para efetuar saque.</span>
+<span class="lineno">12</span>   <span class="k">end</span>
+<span class="lineno">13</span> <span class="k">end</span></code></pre></div>
 
 </div>
 </code-block>
@@ -464,40 +475,45 @@ Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco
 <div>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">Carro</span>
-<span class="lineno"> 2</span>   <span class="vi">@velocidadeAtual</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 3</span>   <span class="vi">@velocidadeMaxima</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 4</span>   <span class="vi">@taxaDeAceleracao</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 5</span>   <span class="vi">@modelo</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 6</span>   <span class="vi">@nomeFabricante</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="lineno"> 7</span>   
+<span class="lineno"> 2</span>   <span class="kp">attr_accessor</span> <span class="ss">:velocidadeAtual</span><span class="p">,</span>
+<span class="lineno"> 3</span>                 <span class="ss">:velocidadeMaxima</span><span class="p">,</span>
+<span class="lineno"> 4</span>                 <span class="ss">:taxaDeAceleracao</span><span class="p">,</span>
+<span class="lineno"> 5</span>                 <span class="ss">:modelo</span><span class="p">,</span>
+<span class="lineno"> 6</span>                 <span class="ss">:nomeFabricante</span>
+<span class="lineno"> 7</span> 
 <span class="lineno"> 8</span>   <span class="k">def</span> <span class="nf">initialize</span><span class="p">()</span>
-<span class="lineno"> 9</span>   <span class="k">end</span>
-<span class="lineno">10</span>   
-<span class="lineno">11</span>   <span class="k">def</span> <span class="nf">acelerar</span><span class="p">()</span>
-<span class="lineno">12</span>     <span class="vi">@velocidadeAtual</span> <span class="o">+=</span> <span class="vi">@taxaDeAceleracao</span>
-<span class="lineno">13</span>   <span class="k">end</span>
-<span class="lineno">14</span>   
-<span class="lineno">15</span>   <span class="k">def</span> <span class="nf">ligar</span><span class="p">()</span>
-<span class="lineno">16</span>     <span class="n">darPartida</span>
-<span class="lineno">17</span>     <span class="n">ligarOMotor</span>
-<span class="lineno">18</span>     <span class="n">ligarPainel</span>
-<span class="lineno">19</span>   <span class="k">end</span>
-<span class="lineno">20</span>   
-<span class="lineno">21</span>   <span class="k">def</span> <span class="nf">darPartida</span><span class="p">()</span>
-<span class="lineno">22</span>     <span class="c1">#Lógica para dar a partida</span>
-<span class="lineno">23</span>   <span class="k">end</span>
-<span class="lineno">24</span>   
-<span class="lineno">25</span>   <span class="k">def</span> <span class="nf">ligarOMotor</span><span class="p">()</span>
-<span class="lineno">26</span>     <span class="c1">#Lógica para ligar o motor</span>
-<span class="lineno">27</span>   <span class="k">end</span>
-<span class="lineno">28</span>   
-<span class="lineno">29</span>   <span class="k">def</span> <span class="nf">ligarPainel</span><span class="p">()</span>
-<span class="lineno">30</span>     <span class="c1">#Lógica para ligar o painel</span>
-<span class="lineno">31</span>   <span class="k">end</span>
-<span class="lineno">32</span>   
-<span class="lineno">33</span>   <span class="c1">#Aqui tornamos nossos métodos privados</span>
-<span class="lineno">34</span>   <span class="kp">private</span> <span class="ss">:darPartida</span><span class="p">,</span> <span class="ss">:ligarOMotor</span><span class="p">,</span> <span class="ss">:ligarPainel</span>
-<span class="lineno">35</span> <span class="k">end</span></code></pre></div>
+<span class="lineno"> 9</span>     <span class="vi">@velocidadeAtual</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">10</span>     <span class="vi">@velocidadeMaxima</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">11</span>     <span class="vi">@taxaDeAceleracao</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">12</span>     <span class="vi">@modelo</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">13</span>     <span class="vi">@nomeFabricante</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="lineno">14</span>   <span class="k">end</span>
+<span class="lineno">15</span>   
+<span class="lineno">16</span>   <span class="k">def</span> <span class="nf">acelerar</span><span class="p">()</span>
+<span class="lineno">17</span>     <span class="vi">@velocidadeAtual</span> <span class="o">+=</span> <span class="vi">@taxaDeAceleracao</span>
+<span class="lineno">18</span>   <span class="k">end</span>
+<span class="lineno">19</span>   
+<span class="lineno">20</span>   <span class="k">def</span> <span class="nf">ligar</span><span class="p">()</span>
+<span class="lineno">21</span>     <span class="n">darPartida</span>
+<span class="lineno">22</span>     <span class="n">ligarOMotor</span>
+<span class="lineno">23</span>     <span class="n">ligarPainel</span>
+<span class="lineno">24</span>   <span class="k">end</span>
+<span class="lineno">25</span>   
+<span class="lineno">26</span>   <span class="k">def</span> <span class="nf">darPartida</span><span class="p">()</span>
+<span class="lineno">27</span>     <span class="c1">#Lógica para dar a partida</span>
+<span class="lineno">28</span>   <span class="k">end</span>
+<span class="lineno">29</span>   
+<span class="lineno">30</span>   <span class="k">def</span> <span class="nf">ligarOMotor</span><span class="p">()</span>
+<span class="lineno">31</span>     <span class="c1">#Lógica para ligar o motor</span>
+<span class="lineno">32</span>   <span class="k">end</span>
+<span class="lineno">33</span>   
+<span class="lineno">34</span>   <span class="k">def</span> <span class="nf">ligarPainel</span><span class="p">()</span>
+<span class="lineno">35</span>     <span class="c1">#Lógica para ligar o painel</span>
+<span class="lineno">36</span>   <span class="k">end</span>
+<span class="lineno">37</span>   
+<span class="lineno">38</span>   <span class="c1">#Aqui tornamos nossos métodos privados</span>
+<span class="lineno">39</span>   <span class="kp">private</span> <span class="ss">:darPartida</span><span class="p">,</span> <span class="ss">:ligarOMotor</span><span class="p">,</span> <span class="ss">:ligarPainel</span>
+<span class="lineno">40</span> <span class="k">end</span></code></pre></div>
  
 </div>
 </code-block>
