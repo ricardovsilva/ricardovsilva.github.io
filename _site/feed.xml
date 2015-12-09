@@ -6,8 +6,8 @@
 </description>
     <link>http://ricardovsilva.github.io/</link>
     <atom:link href="http://ricardovsilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 09 Dec 2015 02:38:21 +0000</pubDate>
-    <lastBuildDate>Wed, 09 Dec 2015 02:38:21 +0000</lastBuildDate>
+    <pubDate>Wed, 09 Dec 2015 02:49:10 +0000</pubDate>
+    <lastBuildDate>Wed, 09 Dec 2015 02:49:10 +0000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -163,7 +163,7 @@ Mas não esqueça, métodos são sempre VERBOS DE AÇÃO.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#Este método é o nosso programa principal.&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;criamos&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uma&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inst&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;â&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ncia&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;de&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Carro&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#criamos uma instância de Carro&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Carro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;carro1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modelo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Celta 1.0&amp;quot;&lt;/span&gt;

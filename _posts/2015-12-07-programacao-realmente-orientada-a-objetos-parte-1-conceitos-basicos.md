@@ -163,7 +163,7 @@ public void main()
 #Este método é o nosso programa principal.
 def main()
 {
-  carro1 = Carro.new //criamos uma instância de Carro
+  carro1 = Carro.new #criamos uma instância de Carro
   carro2 = Carro.new
 
   carro1.modelo = "Celta 1.0"
