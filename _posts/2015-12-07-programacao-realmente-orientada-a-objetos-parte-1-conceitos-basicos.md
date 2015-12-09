@@ -70,8 +70,10 @@ Toda classe possui **métodos** (ações) e **propriedades** (qualidades).
 
 Toda classe também possui um, ou mais, método especial que é invocado quando criamos uma **instância** desta classe (não se preocupe, explicarei mais a frente o que é uma instância). Este método especial é chamado de **construtor**. O construtor é o único método que não é um verbo de ação, mas sim o nome da própria classe.
 
-Ao criarmos uma classe de um carro, nós estamos descrevendo o que um carro TEM (propriedades) e o que um carro pode FAZER (métodos). Vejamos um exemplo em C#:
+Ao criarmos uma classe de um carro, nós estamos descrevendo o que um carro TEM (propriedades) e o que um carro pode FAZER (métodos). Vejamos um exemplo:
 
+<code-block csharp ruby>
+<div>
 {% highlight csharp linenos %}
 public class Carro
 {
@@ -96,13 +98,37 @@ public class Carro
   }
 }
 {% endhighlight %}
+</div>
+<div>
+{% highlight ruby linenos %}
+  class Carro
+    @velocidadeAtual = 0
+    @velocidadeMaxima = 0
+    @taxaDeAceleracao = 0
+    @modelo = ""
+    @nomeFabricante = ""
+    
+    def initialize()
+      #lógica de inicialização aqui
+    end
+    
+    def acelerar()
+      @velocidadeAtual += @taxaDeAceleracao
+    end
+  end
+{% endhighlight %}
+</div>
+</code-block>
 
 ### Instância
 A instância é o objeto propriamente dito. Pegamos a nossa "receita" (**classe**) do carro, e a partir dela criamos vários carros. Cada carro criado é uma instância.
 
 > É importante ressaltar que cada instância possui suas próprias propriedades, com valores independentes.
 
-Por exemplo (em c#):
+Por exemplo:
+
+<code-block csharp ruby>
+<div>
 {% highlight csharp linenos %}
 
 //Este método é o nosso programa principal.
@@ -130,6 +156,37 @@ public void main()
   Console.WriteLine(carro2.VelocidadeAtual); //Será impresso 40
 }
 {% endhighlight %}
+</div>
+<div>
+{% highlight ruby linenos %}
+
+#Este método é o nosso programa principal.
+def main()
+{
+  carro1 = Carro.new //criamos uma instância de Carro
+  carro2 = Carro.new
+
+  carro1.modelo = "Celta 1.0"
+  carro1.fabricante = "Chevrolet"
+  carro1.velocidadeMaxima = 120
+  carro1.taxaDeAceleracao = 20
+  carro1.velocidadeAtual = 0
+
+  carro2.modelo = "Eclipse"
+  carro2.fabricante = "Mitsubishi"
+  carro2.velocidadeMaxima = 220
+  carro2.taxaDeAceleracao = 40
+  carro2.velocidadeAtual = 0
+
+  carro1.acelerar
+  puts carro1.velocidadeAtual #Será impresso 20
+
+  carro2.acelerar();
+  puts carro2.velocidadeAtual #Será impresso 40
+}
+{% endhighlight %}
+</div>
+</code-block>
 
 ## Os pilares da orientação a objetos
 A orientação a objetos tem três pilares básicos: herança, polimorfismo e encapsulamento. Não é correto afirmar que programamos de forma orientada a objetos só porque criamos meia dúzia de classes para separar nossa lógica. É importantiíssimo respeitar esses três pilares.
@@ -140,6 +197,8 @@ A orientação a objetos tem três pilares básicos: herança, polimorfismo e en
 A herança é a capacidade que uma classe tem de "aprender", ou "absorver" capacidades de outras classes. A herança nos poupa muita escrita de código.
 Imagine a seguinte situação, uma **pessoa** pode ser representada pela seguinte classe:
 
+<code-block csharp ruby>
+<div>
 {% highlight csharp linenos %}
 public class Pessoa
 {
@@ -165,10 +224,40 @@ public class Pessoa
   }
 }
 {% endhighlight %}
+</div>
+<div>
+{% highlight ruby linenos %}
+class Pessoa
+  @idade = 0
+  @nome = ""
+  @CPF = ""
+  @RG = ""
+
+  #Este é o nosso construtor
+  def initialize()
+  {
+    #Lógica de inicialização da pessoa aqui.
+  }
+  
+  def caminhar()
+  {
+    #Lógica para fazer a pessoa caminhar.
+  }
+
+  def comer()
+  {
+    #Lógica para comer.
+  }
+}
+{% endhighlight %}
+</div>
+</code-block>
 
 Podemos ver que cada pessoa possui suas propriedades (idade, nome, cpf e rg) e ações (caminhar e comer).
 Retomando o exemplo do cliente de banco, podemos dizer que todo cliente de banco É uma pessoa. Logo, cliente de banco pode HERDAR de pessoa.
 
+<code-block csharp ruby>
+<div>
 {% highlight csharp lineos %}
 public class ClienteDeBanco : Pessoa
 {
@@ -186,6 +275,21 @@ public class ClienteDeBanco : Pessoa
   }
 }
 {% endhighlight %}
+</div>
+<div>
+{% highlight ruby lineos %}
+class ClienteDeBanco < Pessoa
+  @agencia = ""
+  @contaCorrente = ""
+  
+  def efetuarSaque
+  {
+    #Lógica para efetuar saque.
+  }
+}
+{% endhighlight %}
+</div>
+</code-block>
 
 O que exatamente o código acima significa? Significa que, toda instância de ClienteDeBanco que criarmos, poderá fazer tudo o que uma Pessoa faz (caminhar e comer), terá as mesmas propriedades que uma Pessoa tem (idade, cpf, rg, nome), e além disso ele também terá uma Agência e uma Conta Corrente, além de poder efetuar saques.
 
@@ -209,6 +313,8 @@ Voltemos a falar do carro, quando você entra no carro e vira a chave, você est
 
 Como isso ficaria em termos de código? 
 
+<code-block csharp ruby>
+<div>
 {% highlight csharp lineos %} 
 public class Carro
 {
@@ -251,6 +357,47 @@ public class Carro
   } 
 }
 {% endhighlight %} 
+</div>
+<div>
+{% highlight ruby lineos %} 
+class Carro
+  @velocidadeAtual = 0
+  @velocidadeMaxima = 0
+  @taxaDeAceleracao = 0
+  @modelo = ""
+  @nomeFabricante = ""
+  
+  def initialize()
+  end
+  
+  def acelerar()
+    @velocidadeAtual += @taxaDeAceleracao
+  end
+  
+  def ligar()
+    darPartida
+    ligarOMotor
+    ligarPainel
+  end
+  
+  def darPartida()
+    #Lógica para dar a partida
+  end
+  
+  def ligarOMotor()
+    #Lógica para ligar o motor
+  end
+  
+  def ligarPainel()
+    #Lógica para ligar o painel
+  end
+  
+  #Aqui tornamos nossos métodos privados
+  private :darPartida, :ligarOMotor, :ligarPainel
+end
+{% endhighlight %} 
+</div>
+</code-block>
 
 ## Conclusão 
 Neste artigo eu tentei explicar e exemplificar a base da orientação a objetos. Mas programar de forma realmente orientada a objetos é bem mais do que separar funções em classes e ter alguma estrutura de herança. 
