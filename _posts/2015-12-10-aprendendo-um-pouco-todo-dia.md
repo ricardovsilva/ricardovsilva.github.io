@@ -12,7 +12,8 @@ tags:
 
 comments: true
 
-resume: Eu não sou o melhor desenvolvedor do mundo, ainda há muito a aprender e melhorar. Mas, sem falsa modéstia, eu sou bom, muito melhor que imaginei que estaria com apenas 4 anos de experiência. Quer saber como eu consegui chegar a esse nível?
+resume: 
+   Eu não sou o melhor desenvolvedor do mundo, ainda há muito a aprender e melhorar. Mas, sem falsa modéstia, eu sou bom, muito melhor que imaginei que estaria com apenas 4 anos de experiência. Quer saber como eu consegui chegar a esse nível?
 
 ---
 
