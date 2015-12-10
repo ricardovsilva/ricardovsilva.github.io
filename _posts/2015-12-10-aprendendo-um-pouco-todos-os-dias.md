@@ -1,19 +1,19 @@
 ---
-title: Aprendendo um pouco todo dia
+title: Aprendendo Um Pouco Todos os Dias
 
 author: Ricardo da Verdade Silva
 
 layout: post
-Ricardo
+
 tags:
-   - Conhecimento
-   -  Blogs
-   - Inspirações
+- Conhecimento
+- Blogs
+- Inspirações
 
 comments: true
 
-resume: 
-   Eu não sou o melhor desenvolvedor do mundo, ainda há muito a aprender e melhorar. Mas, sem falsa modéstia, eu sou bom, muito melhor que imaginei que estaria com apenas 4 anos de experiência. Quer saber como eu consegui chegar a esse nível?
+resume:
+  Eu não sou o melhor desenvolvedor do mundo, ainda há muito a aprender e melhorar. Mas, sem falsa modéstia, eu sou bom, muito melhor que imaginei que estaria com apenas 4 anos de experiência. Quer saber como eu consegui chegar a esse nível?
 
 ---
 
@@ -60,9 +60,9 @@ Existem inúmeros tutoriais espalhados pela Internet, muitos deles, inclusive, p
 
 ###Jogos
 
-- [Code Combat (em inglês) ](https://codecombat.com) - Exercite Javascript jogando. É um tipo de RPG no qual a única forma de passar de fase é escrevendo código. Sempre recebe fases e desafios novos. 
+- [Code Combat (em inglês)](https://codecombat.com) - Exercite Javascript jogando. É um tipo de RPG no qual a única forma de passar de fase é escrevendo código. Sempre recebe fases e desafios novos. 
 
-[Robot Game (em inglês)] - Jogo multi-player competitivo no qual você possui um robô de combate que deve vencer os robôs de outros jogadores. E onde está a programação? Você não controla o seu robô, você programa sua inteligência artificial em Python. 
+- [Robot Game (em inglês)](https://robotgame.net/) - Jogo multi-player competitivo no qual você possui um robô de combate que deve vencer os robôs de outros jogadores. E onde está a programação? Você não controla o seu robô, você programa sua inteligência artificial em Python. 
 
 ### OpenSource 
 Um fato indiscutível é o fato que a todo instante nos estamos utilizando software OpenSource (este blog que você está lendo usa Jekyll, que é OpenSource), portanto, teve uma ótima idéia que vai ajudar um monte de gente? Nada mais justo do que contribuir um pouquinho com o mundo e participar da comunidade OpenSource. Você também pode contribuir ajudando a melhorar projetos que já existem. 
