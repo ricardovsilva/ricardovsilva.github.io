@@ -15,6 +15,8 @@ resume:
  O livro Code Complete deixou esta importância clara para mim. Nesta tradução livre tento trazer
  este valiosíssimo conhecimento a vocês.
 
+lang: en
+guid: 7a017beb-fb94-4405-a797-0a7401bcea6d
 ---
 
 Este post é uma tradução livre que eu fiz do livro Code

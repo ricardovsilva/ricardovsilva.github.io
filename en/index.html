@@ -1,10 +1,10 @@
 ---
 layout: main
-lang: pt-BR
+lang: en
 guid: cb0c0793-eae8-447a-af41-2d2b0f624bcf
 ---
 
-{% assign posts = paginator.posts | where:"lang", page.lang %}
+{% assign posts = site.posts | where:"lang", page.lang %}
 {% for post in posts %}
   <article class="post">
     <header>

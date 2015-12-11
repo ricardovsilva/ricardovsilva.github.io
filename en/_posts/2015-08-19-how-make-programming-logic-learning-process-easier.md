@@ -13,6 +13,9 @@ resume:
   Muitos desenvolvedores que estão iniciando suas carreiras tem dificuldades básicas no que diz respeito
   ao processo de aprendizado.
   Veja, ou revise, os pontos mais básicos e mais importantes no aprendizado de qualquer linguagem de programação.
+
+lang: en
+guid: e3bc6182-8ef2-498e-a67f-713f21cb20f2
 ---
 
 Tenho visto a dificuldade que muitos iniciantes no estudo de algoritmos e linguagens de programação tem.

@@ -24,10 +24,6 @@
                 </div>
                 <div class="meta">
                   <time class="published" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%B %d, %Y" }}</time>
-                  {% for category in page.categories limit:1 %}
-                    <a href="#">{{ category }}</a>
-                  {% endfor %}
-
         <!--
         <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
         -->

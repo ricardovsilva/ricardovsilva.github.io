@@ -16,7 +16,15 @@ steam_username: cadinhows
 
 # Build settings
 markdown: kramdown
-paginate: 4
 author: Ricardo da Verdade Silva
 gems: [jekyll-paginate]
-lang: pt-BR
+
+
+#Pagination Settings
+permalink: /:categories/:year/:month/:title/
+paginate: 8
+paginate_per_category: true 
+paginate_path: "/blog/page:num/"
+
+
+posts_per_page: 4

@@ -1,20 +1,17 @@
 ---
 title: Aprendendo Um Pouco Todos os Dias
-
 author: Ricardo da Verdade Silva
-
 layout: post
-
 tags:
 - Conhecimento
 - Blogs
 - Inspirações
-
 comments: true
-
 resume:
   Eu não sou o melhor desenvolvedor do mundo, ainda há muito a aprender e melhorar. Mas, sem falsa modéstia, eu sou bom, muito melhor que imaginei que estaria com apenas 4 anos de experiência. Quer saber como eu consegui chegar a esse nível?
 
+lang: pt-BR
+guid: d9735388-9d6f-4b31-9d2d-cad1ac236ffa
 ---
 
 Programar, muito além de uma ciência exata, é uma arte, uma arte que demanda muita habilidade e conhecimento (combinação conhecida também como competência).
