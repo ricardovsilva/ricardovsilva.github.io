@@ -32,17 +32,16 @@ Below, a short list of some of pages that I follow:
 
 - [Troy Hunt](www.troyhunt.com) - A really good security specialist. His blog has a very natural language and his articles are always very enlightening. Mandatory stop for any developer.
 
-- [Microsoft Virtual Academy (inglês/português)](https://mva.microsoft.com/)  - A academia da Microsoft possui muito conteúdo e vídeos muito bons. Eu aprendi MVC aqui. Recomendo muito os Jumpstarts (te levam do 0 ao fazendo algo útil em poucas horas). E se você acha que a MVA tem apenas conteúdo sobre tecnologias Microsoft, a cerca de 6 meses atrás foi publicado um Jumpstart de [Python Django](https://mva.microsoft.com/en-us/training-courses/developing-websites-using-python-and-django-11415?l=AQdTENEJB_4004300477).
+- [Microsoft Virtual Academy](https://mva.microsoft.com/)  - 
+The Microsoft Academy has a lot of content and good videos. Was here where I really understood MVC. I really recommend Jumpstart (takes you from zero to "doing something usefull" in just a couple of hours). And if you think that MBA is related only to Microsoft technology, I recommend to watch [Python Django Junpstart](https://mva.microsoft.com/en-us/training-courses/developing-websites-using-python-and-django-11415?l=AQdTENEJB_4004300477).
 
-- [ADT Magazine (em inglês)](www.adtmag.com) - Conteúdos diversos, todos relacionados a TI. Segurança, banco de dados, cloud computing, infraestrutura, nova linguagem do Google, e outras coisas.
+- [ADT Magazine](www.adtmag.com) - Various IT related content.  Security, databases, cloud computing, infrastructure, programming languages, etc.
 
-- [Allan Kelly (em inglês)](allankelly.blogspot.co.uk) - Engenheiro de software britânico. É um dos meus profissionais favoritos. Posta bastante conteúdo sobre agile, engenharia e arquitetura de software. Seu blog é obrigatório para quem quer entender todas as etapas relacionadas ao desenvolvimento de software além da escrita do código.
+- [Allan Kelly](allankelly.blogspot.co.uk) - British software engineer.  He is one of my favorites professionals. Post a lost of content about agile, software engineering and software architecting. His blog is mandatory stop for anyone who wants to know all steps related to software development. 
 
-- [UX Magazine (em inglês)](uxmag.com) - Não sou especialista em user experience, mas é sempre bom ver alguma coisa sobre, ter noção de alguns conceitos e ver como o mercado (internacional) está convergindo neste sentido.
+- [UX Magazine (em inglês)](uxmag.com) - I'm not specialist, and I'm not planning to be, in User Experience. But is always good have some knowledge about and have an overview to where market is going. 
 
-- [André Baltieri](https://medium.com/@andrebaltieri) - Microposts sobre engenharia e arquitetura de software.
-
-##Habilidade
+##Hability
 
 Conheço somente uma forma de desenvolver habilidade: praticando. Então, como se tornar proeficiente com uma linguagem ou tecnologia com a qual não trabalha no dia-a-dia? 
 
