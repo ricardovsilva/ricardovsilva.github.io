@@ -43,20 +43,20 @@ The Microsoft Academy has a lot of content and good videos. Was here where I rea
 
 ##Hability
 
-Conheço somente uma forma de desenvolver habilidade: praticando. Então, como se tornar proeficiente com uma linguagem ou tecnologia com a qual não trabalha no dia-a-dia? 
+I only know one way to improve your habilities: practicing. So, how get skilled with a programming language or technology that you don't work day by day?
 
-###Tutoriais
-Existem inúmeros tutoriais espalhados pela Internet, muitos deles, inclusive, podem ser feitos online. 
+###Tutorials
+There are countless good tutorials spread over Internet, a lot of they, including, doesn't require install of any application and can be totally done online.
 
-- [TryRuby](tryruby.nl) - Ótimo tutorial online para quem quer dar os primeiros passos com Ruby. Este tutorial foi completamente traduzido para o português brasileiro por mim. 
+- [TryRuby](tryruby.nl) - A really great online tutorial for those who wanting to get started with Ruby. I have my own participating in this tutorial, I translated that to Brazilian Portuguese.
 
-- [Rails Book (em inglês)](https://www.railstutorial.org/book)  - Já aprendeu Ruby e agora quer aprender o seu principal framework para desenvolvimento web? O Rails Book é o tutorial em forma de livro mais completo que eu já vi, ele ensina desde comandos básicos de Linux, passando Github, Heroku e, claro, muito Rails. Tutorial muito recomendado, dependendo da sua fome, dá para devora-lo em um final de semana.
+- [Rails Book](https://www.railstutorial.org/book)  - Has already learned Ruby and now want to learn your main web development framework? The Rails book is the most complete tutorial that I already seen. It's teach since basic Linux terminal commands, passing through Github, Heroku and, of course, a lot of Rails. Very recommended tutorial. 
 
-###Jogos
+###Games
 
-- [Code Combat (em inglês)](https://codecombat.com) - Exercite Javascript jogando. É um tipo de RPG no qual a única forma de passar de fase é escrevendo código. Sempre recebe fases e desafios novos. 
+- [Code Combat](https://codecombat.com) - Exercise javascript playing. Is like a RPG in which the only way to advance is writing code. It's always receiving updates.
 
-- [Robot Game (em inglês)](https://robotgame.net/) - Jogo multi-player competitivo no qual você possui um robô de combate que deve vencer os robôs de outros jogadores. E onde está a programação? Você não controla o seu robô, você programa sua inteligência artificial em Python. 
+- [Robot Game](https://robotgame.net/) - Multiplayer competitive game in wich you have an combat robot that must win battles against other combat robots from other players. And where's the programming? You don't control your robot, you program the AI from your robot using Python.
 
 ### OpenSource 
 Um fato indiscutível é o fato que a todo instante nos estamos utilizando software OpenSource (este blog que você está lendo usa Jekyll, que é OpenSource), portanto, teve uma ótima idéia que vai ajudar um monte de gente? Nada mais justo do que contribuir um pouquinho com o mundo e participar da comunidade OpenSource. Você também pode contribuir ajudando a melhorar projetos que já existem. 
