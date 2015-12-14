@@ -59,14 +59,14 @@ There are countless good tutorials spread over Internet, a lot of they, includin
 - [Robot Game](https://robotgame.net/) - Multiplayer competitive game in wich you have an combat robot that must win battles against other combat robots from other players. And where's the programming? You don't control your robot, you program the AI from your robot using Python.
 
 ### OpenSource 
-Um fato indiscutível é o fato que a todo instante nos estamos utilizando software OpenSource (este blog que você está lendo usa Jekyll, que é OpenSource), portanto, teve uma ótima idéia que vai ajudar um monte de gente? Nada mais justo do que contribuir um pouquinho com o mundo e participar da comunidade OpenSource. Você também pode contribuir ajudando a melhorar projetos que já existem. 
+An unchallengeable fact is that every instant we are using OpenSource software (this blog that you're reading now uses Jekyll, that is OpenSource), therefore, had you a great idea that will help a lot of people? Nothing more fair thant contribute a little with the world and participate from OpenSource communities. You can also contribute to already existent projects.
 
-- [Github](www.github.com) - Maior rede social e de desenvolvedores e projetos OpenSource do mundo. É possível contribuir com projetos já existentes ou criar os seus próprios. Se você ainda não tem sua conta no Github, pare tudo o que está fazendo e vá criar sua conta agora. 
+- [Github](www.github.com) - Biggest developers and OpenSource social network of world. Is possible contribute with already existent projects or create your own. If you don't have your account in Github yet, stop everything you doing and go create your account now!
 
-## Concluindo
+## Concluding
 
-Existe muito conteúdo bom e gratuito na Internet, basta estudar. Você deve ter reparado que a maioria do conteúdo é em inglês, se inglês ainda é o seu fraco, já passou da hora de aprender. Não dá para crescer neste mercado sem saber inglês, portanto, dedique um tempo dos seus estudos a isso. 
+There's a lot of good free content in Internet, just study. You may have noticed that mostly of content is in english, if english still being your weak point, it's past time to learn. Is not possible grow in development market without know english, therefore, take your time and study english.
 
-Na minha opinião, cursos são ótimos pontos de partida mas não irão lhe tornar profissional. O processo de profissionalização acontece a todo instante, a toda hora. É preciso dormir, comer e respirar programação. E, principalmente, gostar de programar. 
+In my personal opinion, courses are great start points, but will not turn you into professional. The professionalization process happens all the time. Is need to sleep, eat and breath programming. And, mainly, love programming.
 
-Gostou deste post? Tem dúvidas ou sugestões? Algum tema específico que gostaria que fosse abordado neste ou em tópicos futuros? Deixe o seu comentário, compartilhe, me ajude a propagar este blog para que eu possa compartilhar meu conhecimento e experiências com cada vez mais gente. 
+Did you like this post? Has questions or sugestions? Any specific topic you would like to be approached by me? Let your comment, share, help me spread this blog for me share my knowledge and experiences with more and more people.
