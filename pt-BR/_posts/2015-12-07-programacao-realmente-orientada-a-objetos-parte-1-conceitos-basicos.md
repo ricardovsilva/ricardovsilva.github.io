@@ -169,30 +169,27 @@ public void main()
 <div>
 {% highlight ruby linenos %}
 
-#Este método é o nosso programa principal.
-def main()
-{
-  carro1 = Carro.new #criamos uma instância de Carro
-  carro2 = Carro.new
+#Este é o nosso programa principal.
+carro1 = Carro.new #criamos uma instância de Carro
+carro2 = Carro.new
 
-  carro1.modelo = "Celta 1.0"
-  carro1.nomeFabricante = "Chevrolet"
-  carro1.velocidadeMaxima = 120
-  carro1.taxaDeAceleracao = 20
-  carro1.velocidadeAtual = 0
+carro1.modelo = "Celta 1.0"
+carro1.nomeFabricante = "Chevrolet"
+carro1.velocidadeMaxima = 120
+carro1.taxaDeAceleracao = 20
+carro1.velocidadeAtual = 0
 
-  carro2.modelo = "Eclipse"
-  carro2.nomeFabricante = "Mitsubishi"
-  carro2.velocidadeMaxima = 220
-  carro2.taxaDeAceleracao = 40
-  carro2.velocidadeAtual = 0
+carro2.modelo = "Eclipse"
+carro2.nomeFabricante = "Mitsubishi"
+carro2.velocidadeMaxima = 220
+carro2.taxaDeAceleracao = 40
+carro2.velocidadeAtual = 0
 
-  carro1.acelerar
-  puts carro1.velocidadeAtual #Será impresso 20
+carro1.acelerar
+puts carro1.velocidadeAtual #Será impresso 20
 
-  carro2.acelerar();
-  puts carro2.velocidadeAtual #Será impresso 40
-}
+carro2.acelerar();
+puts carro2.velocidadeAtual #Será impresso 40
 {% endhighlight %}
 </div>
 </code-block>
