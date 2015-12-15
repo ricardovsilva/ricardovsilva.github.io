@@ -33,22 +33,13 @@
 
 <!-- Menu -->
 <section id="menu">
-  <!-- Search -->
-  <!--
-  <section>
-	  <form class="search" method="get" action="#">
-	    <input type="text" name="query" placeholder="Search" />
-		</form>
-	</section>
-  -->
-	<!-- Links -->
 	<section>
 	  <ul class="links">
-	    <li>
-		    <a href="/acknowledgement">
-				  <h3>Acknowledgement</h3>
-				  <p>Acknowledgement</p>
-				</a>
+	    {% for post in posts %}
+    		<li class="lang">
+    			<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang | upcase }}</a>
+    		</li>
+    	{% endfor %}
 			</li>
     </ul>
 	</section>
