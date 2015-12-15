@@ -16,6 +16,7 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
     "paper-tabs": "PolymerElements/paper-tabs#~1.2.3",
-    "iron-pages": "PolymerElements/iron-pages#~1.0.4"
+    "iron-pages": "PolymerElements/iron-pages#~1.0.4",
+    "webcomponentsjs": "~0.7.19"
   }
 }
