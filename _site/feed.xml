@@ -6,8 +6,8 @@
 </description>
     <link>http://ricardovsilva.github.io/</link>
     <atom:link href="http://ricardovsilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 14 Dec 2015 16:10:37 +0000</pubDate>
-    <lastBuildDate>Mon, 14 Dec 2015 16:10:37 +0000</lastBuildDate>
+    <pubDate>Tue, 15 Dec 2015 21:02:43 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Dec 2015 21:02:43 +0000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -35,63 +35,61 @@ I regard the daily, and constant, information mining much more important than pa
     &lt;p&gt;&lt;a href=&quot;www.troyhunt.com&quot;&gt;Troy Hunt&lt;/a&gt; - A really good security specialist. His blog has a very natural language and his articles are always very enlightening. Mandatory stop for any developer.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://mva.microsoft.com/&quot;&gt;Microsoft Virtual Academy (inglês/português)&lt;/a&gt;  - A academia da Microsoft possui muito conteúdo e vídeos muito bons. Eu aprendi MVC aqui. Recomendo muito os Jumpstarts (te levam do 0 ao fazendo algo útil em poucas horas). E se você acha que a MVA tem apenas conteúdo sobre tecnologias Microsoft, a cerca de 6 meses atrás foi publicado um Jumpstart de &lt;a href=&quot;https://mva.microsoft.com/en-us/training-courses/developing-websites-using-python-and-django-11415?l=AQdTENEJB_4004300477&quot;&gt;Python Django&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://mva.microsoft.com/&quot;&gt;Microsoft Virtual Academy&lt;/a&gt;  - 
+The Microsoft Academy has a lot of content and good videos. Was here where I really understood MVC. I really recommend Jumpstart (takes you from zero to “doing something usefull” in just a couple of hours). And if you think that MBA is related only to Microsoft technology, I recommend to watch &lt;a href=&quot;https://mva.microsoft.com/en-us/training-courses/developing-websites-using-python-and-django-11415?l=AQdTENEJB_4004300477&quot;&gt;Python Django Junpstart&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;www.adtmag.com&quot;&gt;ADT Magazine (em inglês)&lt;/a&gt; - Conteúdos diversos, todos relacionados a TI. Segurança, banco de dados, cloud computing, infraestrutura, nova linguagem do Google, e outras coisas.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;www.adtmag.com&quot;&gt;ADT Magazine&lt;/a&gt; - Various IT related content.  Security, databases, cloud computing, infrastructure, programming languages, etc.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;allankelly.blogspot.co.uk&quot;&gt;Allan Kelly (em inglês)&lt;/a&gt; - Engenheiro de software britânico. É um dos meus profissionais favoritos. Posta bastante conteúdo sobre agile, engenharia e arquitetura de software. Seu blog é obrigatório para quem quer entender todas as etapas relacionadas ao desenvolvimento de software além da escrita do código.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;allankelly.blogspot.co.uk&quot;&gt;Allan Kelly&lt;/a&gt; - British software engineer.  He is one of my favorites professionals. Post a lost of content about agile, software engineering and software architecting. His blog is mandatory stop for anyone who wants to know all steps related to software development.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;uxmag.com&quot;&gt;UX Magazine (em inglês)&lt;/a&gt; - Não sou especialista em user experience, mas é sempre bom ver alguma coisa sobre, ter noção de alguns conceitos e ver como o mercado (internacional) está convergindo neste sentido.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://medium.com/@andrebaltieri&quot;&gt;André Baltieri&lt;/a&gt; - Microposts sobre engenharia e arquitetura de software.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;uxmag.com&quot;&gt;UX Magazine (em inglês)&lt;/a&gt; - I’m not specialist, and I’m not planning to be, in User Experience. But is always good have some knowledge about and have an overview to where market is going.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;habilidade&quot;&gt;Habilidade&lt;/h2&gt;
+&lt;h2 id=&quot;hability&quot;&gt;Hability&lt;/h2&gt;
 
-&lt;p&gt;Conheço somente uma forma de desenvolver habilidade: praticando. Então, como se tornar proeficiente com uma linguagem ou tecnologia com a qual não trabalha no dia-a-dia?&lt;/p&gt;
+&lt;p&gt;I only know one way to improve your habilities: practicing. So, how get skilled with a programming language or technology that you don’t work day by day?&lt;/p&gt;
 
-&lt;h3 id=&quot;tutoriais&quot;&gt;Tutoriais&lt;/h3&gt;
-&lt;p&gt;Existem inúmeros tutoriais espalhados pela Internet, muitos deles, inclusive, podem ser feitos online.&lt;/p&gt;
+&lt;h3 id=&quot;tutorials&quot;&gt;Tutorials&lt;/h3&gt;
+&lt;p&gt;There are countless good tutorials spread over Internet, a lot of they, including, doesn’t require install of any application and can be totally done online.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;tryruby.nl&quot;&gt;TryRuby&lt;/a&gt; - Ótimo tutorial online para quem quer dar os primeiros passos com Ruby. Este tutorial foi completamente traduzido para o português brasileiro por mim.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;tryruby.nl&quot;&gt;TryRuby&lt;/a&gt; - A really great online tutorial for those who wanting to get started with Ruby. I have my own participating in this tutorial, I translated that to Brazilian Portuguese.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.railstutorial.org/book&quot;&gt;Rails Book (em inglês)&lt;/a&gt;  - Já aprendeu Ruby e agora quer aprender o seu principal framework para desenvolvimento web? O Rails Book é o tutorial em forma de livro mais completo que eu já vi, ele ensina desde comandos básicos de Linux, passando Github, Heroku e, claro, muito Rails. Tutorial muito recomendado, dependendo da sua fome, dá para devora-lo em um final de semana.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.railstutorial.org/book&quot;&gt;Rails Book&lt;/a&gt;  - Has already learned Ruby and now want to learn your main web development framework? The Rails book is the most complete tutorial that I already seen. It’s teach since basic Linux terminal commands, passing through Github, Heroku and, of course, a lot of Rails. Very recommended tutorial.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;jogos&quot;&gt;Jogos&lt;/h3&gt;
+&lt;h3 id=&quot;games&quot;&gt;Games&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://codecombat.com&quot;&gt;Code Combat (em inglês)&lt;/a&gt; - Exercite Javascript jogando. É um tipo de RPG no qual a única forma de passar de fase é escrevendo código. Sempre recebe fases e desafios novos.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://codecombat.com&quot;&gt;Code Combat&lt;/a&gt; - Exercise javascript playing. Is like a RPG in which the only way to advance is writing code. It’s always receiving updates.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://robotgame.net/&quot;&gt;Robot Game (em inglês)&lt;/a&gt; - Jogo multi-player competitivo no qual você possui um robô de combate que deve vencer os robôs de outros jogadores. E onde está a programação? Você não controla o seu robô, você programa sua inteligência artificial em Python.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://robotgame.net/&quot;&gt;Robot Game&lt;/a&gt; - Multiplayer competitive game in wich you have an combat robot that must win battles against other combat robots from other players. And where’s the programming? You don’t control your robot, you program the AI from your robot using Python.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;opensource&quot;&gt;OpenSource&lt;/h3&gt;
-&lt;p&gt;Um fato indiscutível é o fato que a todo instante nos estamos utilizando software OpenSource (este blog que você está lendo usa Jekyll, que é OpenSource), portanto, teve uma ótima idéia que vai ajudar um monte de gente? Nada mais justo do que contribuir um pouquinho com o mundo e participar da comunidade OpenSource. Você também pode contribuir ajudando a melhorar projetos que já existem.&lt;/p&gt;
+&lt;p&gt;An unchallengeable fact is that every instant we are using OpenSource software (this blog that you’re reading now uses Jekyll, that is OpenSource), therefore, had you a great idea that will help a lot of people? Nothing more fair thant contribute a little with the world and participate from OpenSource communities. You can also contribute to already existent projects.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;www.github.com&quot;&gt;Github&lt;/a&gt; - Maior rede social e de desenvolvedores e projetos OpenSource do mundo. É possível contribuir com projetos já existentes ou criar os seus próprios. Se você ainda não tem sua conta no Github, pare tudo o que está fazendo e vá criar sua conta agora.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;www.github.com&quot;&gt;Github&lt;/a&gt; - Biggest developers and OpenSource social network of world. Is possible contribute with already existent projects or create your own. If you don’t have your account in Github yet, stop everything you doing and go create your account now!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;concluindo&quot;&gt;Concluindo&lt;/h2&gt;
+&lt;h2 id=&quot;concluding&quot;&gt;Concluding&lt;/h2&gt;
 
-&lt;p&gt;Existe muito conteúdo bom e gratuito na Internet, basta estudar. Você deve ter reparado que a maioria do conteúdo é em inglês, se inglês ainda é o seu fraco, já passou da hora de aprender. Não dá para crescer neste mercado sem saber inglês, portanto, dedique um tempo dos seus estudos a isso.&lt;/p&gt;
+&lt;p&gt;There’s a lot of good free content in Internet, just study. You may have noticed that mostly of content is in english, if english still being your weak point, it’s past time to learn. Is not possible grow in development market without know english, therefore, take your time and study english.&lt;/p&gt;
 
-&lt;p&gt;Na minha opinião, cursos são ótimos pontos de partida mas não irão lhe tornar profissional. O processo de profissionalização acontece a todo instante, a toda hora. É preciso dormir, comer e respirar programação. E, principalmente, gostar de programar.&lt;/p&gt;
+&lt;p&gt;In my personal opinion, courses are great start points, but will not turn you into professional. The professionalization process happens all the time. Is need to sleep, eat and breath programming. And, mainly, love programming.&lt;/p&gt;
 
-&lt;p&gt;Gostou deste post? Tem dúvidas ou sugestões? Algum tema específico que gostaria que fosse abordado neste ou em tópicos futuros? Deixe o seu comentário, compartilhe, me ajude a propagar este blog para que eu possa compartilhar meu conhecimento e experiências com cada vez mais gente.&lt;/p&gt;
+&lt;p&gt;Did you like this post? Has questions or sugestions? Any specific topic you would like to be approached by me? Let your comment, share, help me spread this blog for me share my knowledge and experiences with more and more people.&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Dec 2015 00:00:00 +0000</pubDate>
         <link>http://ricardovsilva.github.io/en/2015/12/learning-a-bit-every-day/</link>
