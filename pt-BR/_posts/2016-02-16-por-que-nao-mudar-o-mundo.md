@@ -7,7 +7,7 @@ tags:
  - tradução
 comments: true
 resume:
- Algumas vezes já ouvi aspirantes a programador(a) dizendo não saber se querem ser realmente programadores por achar que com programação a única coisa que você vai fazer na vida é enriquecer algum empresário.
+ Algumas vezes já ouvi iniciantes em programação dizendo não saber se querem ser realmente programadores por achar que com programação a única coisa que você vai fazer na vida é enriquecer algum empresário.
  Até o início de 2015 eu pensava de forma similar. Este post é uma tradução livre do post de Stephen Gallagher que mostra como é possível mudar o mundo com programação.
 
 lang: pt-BR
