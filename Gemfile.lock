@@ -148,3 +148,6 @@ DEPENDENCIES
   jekyll-paginate
   json
   rack-jekyll
+
+BUNDLED WITH
+   1.15.3
