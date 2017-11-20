@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% if site.show_navbar %}
+        {% include nav.html %}
+    {% endif %}
+    <!-- Header -->
+    <header class="header flex" role="banner">
+        <div class="container animated fadeIn">
+            <div class="row">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
+                    </a>
+                    <h3 class="title">
+                        {{ site.title }}
+                    </h3>
+                    <hr class="hr-line">
+                    <h3 class="bio">
+                        {{ site.bio }}
+                    </h3>
+                    <h3 class="resume">
+                        <a class="btn zoombtn" href="{{ site.url }}/curriculo">
+                            Currículo
+                        </a>
+                    </h3>
+                    {% include social-links.html %}
+            </div>
+        </div>
+    </header>
+    {% include scripts.html %}
+</body>
+</html>

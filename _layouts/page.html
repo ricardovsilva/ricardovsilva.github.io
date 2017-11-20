@@ -1,70 +1,31 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  {% include header.html %}
-	<body>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				{% include head.html %}
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-            <article class="post">
-              <header>
-                <div class="title">
-                  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-                <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
-                </div>
-                <div class="meta">
-                  <time class="published" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%B %d, %Y" }}</time>
-                  {% for category in page.categories limit:1 %}
-                    <a href="#">{{ category }}</a>
-                  {% endfor %}
-        <!--
-        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-        -->
-                </div>
-              </header>
-              {% if page.image %}
-                <a href="{{ page.url }}" class="image featured"><img src="{{page.image}}" alt="" /></a>
-              {% endif %}
-              {{ content }}
-              <footer>
-                <ul class="stats">
-                {% for tag in page.tags limit:3 %}
-                  <li><a href="#">{{ tag }}</a></li>
-                {% endfor %}
-        <!--
-        <li><a href="#">General</a></li>
-        <li><a href="#" class="icon fa-heart">28</a></li>
-        <li><a href="#" class="icon fa-comment">128</a></li>
-        -->
-                </ul>
-              </footer>
-           </article>
-					</div>
-
-				<!-- Sidebar -->
-					<section id="sidebar">
-
-						<!-- Intro -->
-						{% include intro.html %}
-
-						<!-- About -->
-					  {% include about.html %}
-
-						<!-- Footer -->
-						{% include footer.html %}
-					</section>
-			</div>
-		<!-- Scripts -->
-		{% include scripts.html %}
-	</body>
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% if site.show_navbar %}
+        {% include nav.html %}
+    {% endif %}
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
+    </header>
+    {% include scripts.html %}
+    {% if site.mathjax == true %}
+    <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
+</body>
 </html>

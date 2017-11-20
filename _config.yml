@@ -1,30 +1,80 @@
-# Site settings
-title: Mr Truth Development
-email: ricardovsilva@msn.com
-description: > # this means to ignore newlines until "baseurl:"
-  Dicas e tutoriais destinados a todos que desejam entrar ou dar um salto
-  no mercado de trabalho de desenvolvimento de software.
-  Esta é minha tentativa de devolver um pouco de tudo o que a comunidade
-  opensource já me deu.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ricardovsilva.github.io" # the base hostname & protocol for your site
-twitter_username: MrTruthDev
-github_username:  ricardovsilva
-linkedin_username: ricardo-silva-66067327
-stackoverflow_username: 2350913/ricardo-silva
-steam_username: cadinhows
+# Site
+title:              Ricardo da Verdade Silva
+bio:                .Net Pro | Ruby Enthusiast | Python Lover. Lazy programmer. I'm always learning more to write less. Also dad of three gorgeous dog (all dogs are gorgeous at all)
+description:        ".Net Pro | Ruby Enthusiast | Python Lover. Lazy programmer. I'm always learning more to write less. Also dad of three gorgeous dog (all dogs are gorgeous at all)"
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/eu e charlinho.jpg'
+#background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             pt_BR
+#url:                https://www.ricardovsilva.com.br
 
-# Build settings
-markdown: kramdown
-author: Ricardo da Verdade Silva
-gems: [jekyll-paginate]
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
+# Comments
+disqus_shortname:   ricardovsilva
 
-#Pagination Settings
-permalink: /:categories/:year/:month/:title/
-paginate: 8
-paginate_per_category: true 
-paginate_path: "/blog/page:num/"
+#General
+show_navbar: false
 
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+email:              ricardovsilva@msn.com
+twitter:            MrTruthDev
+facebook:           ricardovsilva91
+github-url:         ricardovsilva
+stackoverflow:      2350913/ricardo-silva
+linkedin:           ricardo-silva-66067327
+#xing:              username
+#instagram:         username
+lastfm:            ricardovsilva
+#tumblr:            username
+#medium:            '@username'
+#pinterest:         username
+#foursquare:        username
+steam:              ricardioS2
+#dribbble:          username
+#youtube:           username
+#youtube-channel:   channel
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+twitch:             ricardioS2
 
-posts_per_page: 4
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
