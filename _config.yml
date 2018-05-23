@@ -25,6 +25,9 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+# Dependencies
+highlighter:      pygments
+
 # Comments
 disqus_shortname:   ricardovsilva
 
@@ -78,3 +81,15 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/ricardovsilva/ricardovsilva.github.io
