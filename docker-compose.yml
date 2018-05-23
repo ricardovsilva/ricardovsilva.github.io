@@ -1,0 +1,9 @@
+version: '3.0'
+
+services:
+  site:
+    build: .
+    volumes:
+      - .:/app
+    ports: 
+      - "4000:4000"
