@@ -12,6 +12,7 @@ resume:
 
 lang: pt-BR
 guid: d9735388-9d6f-4b31-9d2d-cad1ac236ffa
+category: ['blog']
 ---
 
 Programar, muito além de uma ciência exata, é uma arte, uma arte que demanda muita habilidade e conhecimento (combinação conhecida também como competência).

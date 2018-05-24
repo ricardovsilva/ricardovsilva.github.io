@@ -12,6 +12,7 @@ resume:
 
 lang: pt-BR
 guid: c77636f6-b352-4c4e-8633-d6be4c29de7a
+category: ['blog']
 ---
 
 > "Eu sempre me interessei por ciência, tecnologia e (acima de tudo) computadores. Essas são coisas que eu sempre amei, apesar de serem difíceis as vezes. Eu amei matemática e ciências na escola. Eu li histórias de ficção ciêntifica e aventuras fantasiosas durante todo tempo livre que eu tinha. Eu fui o garoto nerd da escola que sofria bullying e era zoado. Teria sido bem mais fácil desistir do meu jeito e ser 'como qualquer outro'. Eu poderia ter parado de ler. Eu poderia ter praticado mais esportes.

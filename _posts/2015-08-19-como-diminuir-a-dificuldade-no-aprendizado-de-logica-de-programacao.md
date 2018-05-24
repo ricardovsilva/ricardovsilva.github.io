@@ -16,6 +16,7 @@ resume:
 
 lang: pt-BR
 guid: e3bc6182-8ef2-498e-a67f-713f21cb20f2
+category: ['blog']
 ---
 
 Tenho visto a dificuldade que muitos iniciantes no estudo de algoritmos e linguagens de programação tem.

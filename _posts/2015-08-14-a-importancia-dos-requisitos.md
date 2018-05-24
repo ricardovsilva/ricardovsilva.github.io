@@ -17,6 +17,7 @@ resume:
 
 lang: pt-BR
 guid: 7a017beb-fb94-4405-a797-0a7401bcea6d
+category: ['blog']
 ---
 
 Este post é uma tradução livre que eu fiz do livro Code

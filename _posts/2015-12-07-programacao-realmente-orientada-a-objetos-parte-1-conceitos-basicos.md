@@ -17,6 +17,7 @@ resume:
   
 lang: pt-BR
 guid: 44cf037c-087a-4ad5-8e76-0732edc8afe1
+category: ['blog']
 ---
 Sou programador profissional a pouco mais de 3 anos. Apesar de parecer pouco tempo, já vi muita coisa deste mercado. Já vi muitos profissionais com 15 anos de experiência, diversos títulos, e que até hoje não sabem programar de forma REALMENTE orientada a objetos.
 
